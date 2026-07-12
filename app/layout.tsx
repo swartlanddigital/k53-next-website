@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   openGraph: { type:"website", locale:"en_ZA", siteName:"K53 Fast", title:"K53 Fast — Learn it. Nail it. Drive.", description:"A colourful K53 learner app with 1,574 practice questions, image-based road signs and mock tests.", images:[{url:"/og.png",width:1732,height:909,alt:"K53 Fast — Learn it. Nail it. Drive."}] },
   twitter: { card:"summary_large_image", title:"K53 Fast — Learn it. Nail it. Drive.", description:"Practise K53 questions, road signs and mock tests for South Africa.", images:["/og.png"] },
   robots: { index:true, follow:true },
+  alternates: { canonical: "/" },
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {

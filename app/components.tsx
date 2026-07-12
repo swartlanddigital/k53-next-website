@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 export const APP_URL = "https://cunning-pass-k53-fast.base44.app";
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+export const asset = (path: string) => `${BASE_PATH}${path}`;
 
 export function Logo() {
   return <Link className="logo" href="/" aria-label="K53 Fast home"><span>K53</span><b>FAST</b></Link>;
@@ -19,7 +21,7 @@ export function StoreButtons() {
 }
 
 export function Phone({screen, alt, tilt=""}:{screen:string;alt:string;tilt?:string}) {
-  return <div className={`phone ${tilt}`}><div className="phone-top"/><div className="screen-crop"><img src={screen} alt={alt} width="2544" height="930" /></div></div>;
+  return <div className={`phone ${tilt}`}><div className="phone-top"/><div className="screen-crop"><img src={asset(screen)} alt={alt} width="2544" height="930" /></div></div>;
 }
 
 export function PageHero({eyebrow,title,lede,children}:{eyebrow:string;title:string;lede:string;children?:React.ReactNode}) {
@@ -42,4 +44,3 @@ export const faqItems = [
 export function FAQList({limit}:{limit?:number}) {
   return <div className="faq-list">{faqItems.slice(0,limit).map(([q,a])=><details key={q}><summary>{q}<span>+</span></summary><p>{a}</p></details>)}</div>;
 }
-

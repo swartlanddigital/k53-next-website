@@ -43,12 +43,12 @@ test("renders every crawlable content route with unique metadata", async () => {
   ];
 
   for (const [pathname, title] of routes) {
-    const response = await render(pathname);
+    const response = await render(`${pathname}/`);
     assert.equal(response.status, 200, pathname);
     const html = await response.text();
     assert.match(html, new RegExp(`<title>${title}`), pathname);
     assert.match(html, /<meta name="description" content="[^"]+"/i, pathname);
-    assert.match(html, new RegExp(`rel="canonical" href="http://localhost:3000${pathname.replaceAll("/", "\\/")}"`), pathname);
+    assert.match(html, new RegExp(`rel="canonical" href="http://localhost:3000${pathname.replaceAll("/", "\\/")}\\/"`), pathname);
     assert.match(html, /<main id="main">/i, pathname);
     assert.match(html, /<h1/i, pathname);
   }
