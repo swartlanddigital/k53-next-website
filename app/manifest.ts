@@ -1,0 +1,1 @@
+import type {MetadataRoute} from "next";export default function manifest():MetadataRoute.Manifest{return {name:"K53 Fast",short_name:"K53 Fast",description:"K53 learner's licence practice for South Africa",start_url:"/",display:"standalone",background_color:"#090b18",theme_color:"#7557ff",lang:"en-ZA"}}
