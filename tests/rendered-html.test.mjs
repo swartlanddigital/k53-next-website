@@ -21,10 +21,12 @@ test("server-renders the finished K53 Fast homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<html lang="en-ZA">/i);
-  assert.match(html, /<title>K53 Fast \| South Africa/i);
-  assert.match(html, /Pass your K53/);
-  assert.match(html, /1,574 real practice questions/);
-  assert.match(html, /Start practising free/);
+  assert.match(html, /<title>K53 Fast \| Prepare for the New Computerised/i);
+  assert.match(html, /The test changed/);
+  assert.match(html, /1,574 digital questions/);
+  assert.match(html, /Practise on screen free/);
+  assert.match(html, /westerncape\.gov\.za/);
+  assert.match(html, /iol\.co\.za/);
   assert.match(html, /Independent study tool/);
   assert.match(html, /application\/ld\+json/);
   assert.match(html, /property="og:image" content="http:\/\/localhost:3000\/og\.png"/);
@@ -33,7 +35,8 @@ test("server-renders the finished K53 Fast homepage", async () => {
 
 test("renders every crawlable content route with unique metadata", async () => {
   const routes = [
-    ["/k53-learners-test", "K53 Learner"],
+    ["/computerised-learners-test", "New Computerised Learner&#x27;s Licence Test South Africa"],
+    ["/k53-learners-test", "K53 Computerised Learner"],
     ["/k53-road-signs", "K53 Road Signs"],
     ["/learners-licence-app", "Learner&#x27;s Licence App"],
     ["/k53-practice-test", "Free K53 Practice Test"],

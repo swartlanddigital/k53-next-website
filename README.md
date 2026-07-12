@@ -7,7 +7,7 @@ The standalone public-facing website for K53 Fast, a South African K53 learner's
 - Colourful, mobile-first campaign homepage for learner drivers aged 17–25
 - Real K53 Fast app screenshots and sign-focused question imagery
 - Web-app call to action plus honest App Store and Google Play “Coming soon” states
-- Dedicated search pages for K53 learner tests, road signs, practice tests and learner-app queries
+- Dedicated search pages for the new computerised learner's licence test, K53 learner tests, road signs, practice tests and learner-app queries
 - FAQ, privacy policy, terms, structured data, sitemap, robots rules and social sharing artwork
 - Responsive, keyboard-friendly layout with reduced-motion support
 

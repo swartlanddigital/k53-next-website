@@ -9,11 +9,11 @@ export function Logo() {
 }
 
 export function Header() {
-  return <header className="site-header"><div className="shell nav-wrap"><Logo /><nav aria-label="Main navigation"><Link href="/k53-learners-test">Learner test</Link><Link href="/k53-road-signs">Road signs</Link><Link href="/k53-practice-test">Practice</Link><Link href="/faq">FAQ</Link></nav><a className="button button-small" href={APP_URL}>Practise free <span aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><div className="shell nav-wrap"><Logo /><nav aria-label="Main navigation"><Link href="/computerised-learners-test">New test</Link><Link href="/k53-learners-test">Learner test</Link><Link href="/k53-road-signs">Road signs</Link><Link href="/k53-practice-test">Practice</Link></nav><a className="button button-small" href={APP_URL}>Practise free <span aria-hidden="true">↗</span></a></div></header>;
 }
 
 export function Footer() {
-  return <footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Your colourful K53 study companion for South African learner drivers.</p></div><div><h2>Study</h2><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link><Link href="/learners-licence-app">Learner app</Link></div><div><h2>Help</h2><Link href="/faq">Frequently asked questions</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><p className="tiny">iOS and Android apps coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Fast</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer>;
+  return <footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Built for South Africa’s new computerised learner’s licence testing era.</p></div><div><h2>Study</h2><Link href="/computerised-learners-test">New computerised test</Link><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link></div><div><h2>Help</h2><Link href="/faq">Frequently asked questions</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><p className="tiny">iOS and Android apps coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Fast</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer>;
 }
 
 export function StoreButtons() {
@@ -33,6 +33,8 @@ export function CTA() {
 }
 
 export const faqItems = [
+  ["What is the new computerised learner's licence test?","The Computerised Learner’s Licence Testing system replaces the manual booklet method with secure digital testing. In the Western Cape rollout, terminals use fingerprint verification, randomised questions and instant digital processing."],
+  ["Why should I practise on a screen?","Screen-based practice helps you get comfortable reading carefully, choosing answers digitally and staying focused in a timed environment—the same skills candidates report struggling with in the computerised test."],
   ["What is the K53 learner's licence test?","It is the theory test used in South Africa to check your knowledge of road rules, road signs and vehicle controls before you can receive a learner's licence."],
   ["Can I practise K53 questions for free?","Yes. K53 Fast's web app lets you start practising from your phone or computer. Choose a topic, review mistakes and try timed mock tests."],
   ["Does K53 Fast cover Code A, B and C?","Yes. The question bank supports motorcycle, light motor vehicle and heavy motor vehicle study paths, commonly referred to as Code A, B and C."],
