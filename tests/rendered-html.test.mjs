@@ -41,8 +41,10 @@ test("renders every crawlable content route with unique metadata", async () => {
     ["/learners-licence-app", "Learner&#x27;s Licence App"],
     ["/k53-practice-test", "Free K53 Practice Test"],
     ["/faq", "K53 Learner App Frequently Asked Questions"],
+    ["/support", "Support"],
     ["/privacy", "Privacy Policy"],
-    ["/terms", "Terms of Use"],
+    ["/terms", "Terms of Service"],
+    ["/delete-account", "Delete Your Account"],
   ];
 
   for (const [pathname, title] of routes) {

@@ -12,14 +12,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/learners-licence-app/",
     "/k53-practice-test/",
     "/faq/",
+    "/support/",
     "/privacy/",
     "/terms/",
+    "/delete-account/",
   ];
 
   return paths.map((path, index) => ({
     url: `${base}${path}`,
-    lastModified: new Date("2026-07-12"),
+    lastModified: new Date("2026-07-13"),
     changeFrequency: index === 0 ? "weekly" : "monthly",
-    priority: index === 0 ? 1 : (path === "/privacy/" || path === "/terms/") ? 0.3 : 0.8,
+    priority: index === 0 ? 1 : (["/privacy/", "/terms/", "/delete-account/"].includes(path)) ? 0.3 : 0.8,
   }));
 }
