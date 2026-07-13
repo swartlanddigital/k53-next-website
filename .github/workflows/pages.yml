@@ -26,8 +26,8 @@ jobs:
       - run: npm install --no-audit --no-fund
       - run: npm run build:pages
         env:
-          NEXT_PUBLIC_SITE_URL: https://swartlanddigital.github.io/k53-fast-website
-          NEXT_PUBLIC_BASE_PATH: /k53-fast-website
+          NEXT_PUBLIC_SITE_URL: https://swartlanddigital.github.io/k53-next-website
+          NEXT_PUBLIC_BASE_PATH: /k53-next-website
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

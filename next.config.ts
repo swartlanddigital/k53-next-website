@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
-  basePath: isGitHubPages ? "/k53-fast-website" : "",
+  basePath: isGitHubPages ? "/k53-next-website" : "",
 };
 
 export default nextConfig;
