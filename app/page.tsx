@@ -19,11 +19,11 @@ export default function Home() {
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": "#org", name: "K53 Fast", url: "/" },
-      { "@type": "WebSite", "@id": "#website", name: "K53 Fast", url: "/", publisher: { "@id": "#org" } },
+      { "@type": "Organization", "@id": "#org", name: "K53 Next", url: "/" },
+      { "@type": "WebSite", "@id": "#website", name: "K53 Next", url: "/", publisher: { "@id": "#org" } },
       {
         "@type": "SoftwareApplication",
-        name: "K53 Fast",
+        name: "K53 Next",
         applicationCategory: "EducationalApplication",
         operatingSystem: "Web, iOS, Android",
         url: APP_URL,
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="kicker"><span>💻</span> Built for the computerised test era</div>
               <h1>The test changed.<br />Your prep <em>should too.</em></h1>
               <p className="hero-lede">
-                The new learner’s test is digital, randomised and screen-based. K53 Fast trains you to read carefully,
+                The new learner’s test is digital, randomised and screen-based. K53 Next trains you to read carefully,
                 handle tricky wording and stay sharp under timed pressure.
               </p>
               <div className="hero-actions">
@@ -66,11 +66,11 @@ export default function Home() {
                 <span>✓ Code A, B &amp; C</span>
               </div>
             </div>
-            <div className="hero-visual" aria-label="K53 Fast screen-based practice">
+            <div className="hero-visual" aria-label="K53 Next screen-based practice">
               <span className="sticker sticker-lime">NEW<br /><small>TEST ERA</small></span>
               <span className="sticker sticker-coral">DON&apos;T<br />GUESS!</span>
-              <Phone screen="/app-screens/practice.png" alt="K53 Fast screen-based practice topics" tilt="tilt-left" />
-              <Phone screen="/app-screens/mock-test.png" alt="K53 Fast timed computerised mock tests" tilt="tilt-right" />
+              <Phone screen="/app-screens/practice.png" alt="K53 Next screen-based practice topics" tilt="tilt-left" />
+              <Phone screen="/app-screens/mock-test.png" alt="K53 Next timed computerised mock tests" tilt="tilt-right" />
               <div className="float-sign"><img src={asset("/signs/two-way-traffic.webp")} alt="Two-way traffic warning sign" width="512" height="512" /></div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export default function Home() {
             <div><strong>172</strong><span>image questions</span></div>
             <div><strong>24/7</strong><span>digital practice</span></div>
           </div>
-          <p className="stat-source shell">40% figure reported by IOL on 23 May 2026; it is not a K53 Fast performance claim.</p>
+          <p className="stat-source shell">40% figure reported by IOL on 23 May 2026; it is not a K53 Next performance claim.</p>
         </section>
 
         <section className="section change-section" id="changed">
@@ -133,7 +133,7 @@ export default function Home() {
         <section className="section app-tour">
           <div className="shell tour-grid">
             <div className="tour-phone">
-              <Phone screen="/app-screens/practice.png" alt="K53 Fast computerised learner test practice modes" />
+              <Phone screen="/app-screens/practice.png" alt="K53 Next computerised learner test practice modes" />
               <span className="bubble bubble-one">Tricky wording? →<br /><b>Train for it.</b></span>
               <span className="bubble bubble-two">Weak section? →<br /><b>Drill it.</b></span>
             </div>

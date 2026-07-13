@@ -1,8 +1,8 @@
-# K53 Fast — Google Play listing
+# K53 Next — Google Play listing
 
 ## App name
 
-K53 Fast
+K53 Next
 
 ## Short description
 
@@ -12,7 +12,7 @@ Study 1,574 K53 questions, road signs and computerised mock tests.
 
 Prepare for South Africa's computerised learner's licence test with focused K53 practice built for the new testing experience.
 
-K53 Fast gives you a complete study system in one app:
+K53 Next gives you a complete study system in one app:
 
 - Practise from a bank of 1,574 K53 questions.
 - Study road rules, road signs and vehicle controls by topic.
@@ -26,7 +26,7 @@ K53 Fast gives you a complete study system in one app:
 
 The app is designed around the new computerised learner's licence testing era. Its mock-test structure helps you prepare for road rules, road signs and vehicle controls while building confidence with the format and timing of a computer-based test.
 
-K53 Fast is an independent educational study tool. It is not affiliated with, endorsed by or operated by the South African government, a Driving Licence Testing Centre or any licensing authority. Practice results do not guarantee a pass. Always confirm current official requirements with the relevant licensing authority.
+K53 Next is an independent educational study tool. It is not affiliated with, endorsed by or operated by the South African government, a Driving Licence Testing Centre or any licensing authority. Practice results do not guarantee a pass. Always confirm current official requirements with the relevant licensing authority.
 
 ## Category
 
@@ -38,7 +38,7 @@ Education
 
 ## Release notes
 
-Initial K53 Fast closed-testing release with topic practice, road-sign questions, vehicle controls, timed mock tests, progress tracking and the complete 1,574-question study bank.
+Initial K53 Next closed-testing release with topic practice, road-sign questions, vehicle controls, timed mock tests, progress tracking and the complete 1,574-question study bank.
 
 ## Prepared artwork
 

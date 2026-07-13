@@ -1,1 +1,1 @@
-import Link from "next/link";export default function NotFound(){return <main className="four-oh-four"><b>404</b><h1>Wrong turn.</h1><p>This page has moved on. Your K53 practice is still right where you left it.</p><Link className="button" href="/">Back to K53 Fast</Link></main>}
+import Link from "next/link";export default function NotFound(){return <main className="four-oh-four"><b>404</b><h1>Wrong turn.</h1><p>This page has moved on. Your K53 practice is still right where you left it.</p><Link className="button" href="/">Back to K53 Next</Link></main>}

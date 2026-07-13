@@ -15,13 +15,13 @@ async function render(pathname = "/") {
   );
 }
 
-test("server-renders the finished K53 Fast homepage", async () => {
+test("server-renders the finished K53 Next homepage", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<html lang="en-ZA">/i);
-  assert.match(html, /<title>K53 Fast \| Prepare for the New Computerised/i);
+  assert.match(html, /<title>K53 Next \| Prepare for the New Computerised/i);
   assert.match(html, /The test changed/);
   assert.match(html, /1,574 digital questions/);
   assert.match(html, /Practise on screen free/);

@@ -3,7 +3,7 @@ import { Footer, Header, PageHero } from "../components";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Read the privacy policy for the K53 Fast app and website.",
+  description: "Read the privacy policy for the K53 Next app and website.",
   alternates: { canonical: "/privacy/" },
 };
 
@@ -15,7 +15,7 @@ export default function Page() {
         <PageHero
           eyebrow="THE FINE PRINT"
           title="Privacy, in plain language."
-          lede="How K53 Fast handles account information, study progress and website data."
+          lede="How K53 Next handles account information, study progress and website data."
         />
         <article className="content-page">
           <div className="shell narrow prose">
@@ -23,21 +23,21 @@ export default function Page() {
 
             <h2>About this policy</h2>
             <p>
-              This policy applies to the K53 Fast Android application, web
-              application and marketing website (together, “K53 Fast”). K53
+              This policy applies to the K53 Next Android application, web
+              application and marketing website (together, “K53 Next”). K53
               Fast is an independent educational service and is not affiliated
               with, endorsed by or operated by the South African government or
               any driving licence testing authority.
             </p>
 
             <h2>Information we collect</h2>
-            <p>Depending on how you use K53 Fast, we may process:</p>
+            <p>Depending on how you use K53 Next, we may process:</p>
             <ul>
               <li>
                 <strong>Account information:</strong> your name, email address,
                 account identifier and authentication information. If you use
                 Google sign-in, Google supplies the basic account details needed
-                to sign you in; K53 Fast does not receive your Google password.
+                to sign you in; K53 Next does not receive your Google password.
               </li>
               <li>
                 <strong>Study and app activity:</strong> selected licence or
@@ -62,7 +62,7 @@ export default function Page() {
                 To provide quizzes, mock tests, bookmarks and progress tracking
                 across the Android and web apps.
               </li>
-              <li>To operate, maintain, troubleshoot and improve K53 Fast.</li>
+              <li>To operate, maintain, troubleshoot and improve K53 Next.</li>
               <li>To detect misuse, fraud and security threats.</li>
               <li>To respond to support, privacy and legal requests.</li>
               <li>To comply with applicable law.</li>
@@ -71,12 +71,12 @@ export default function Page() {
             <h2>Service providers and sharing</h2>
             <p>
               We do not sell your personal information. We use trusted service
-              providers to host and operate K53 Fast, authenticate users, store
+              providers to host and operate K53 Next, authenticate users, store
               data and diagnose errors. These may include Base44/Wix and Google
               or Firebase services. They may process information only as needed
               to provide their services, protect the platform or comply with
               law. We may also disclose information where legally required or
-              where necessary to protect users, K53 Fast or the public.
+              where necessary to protect users, K53 Next or the public.
             </p>
 
             <h2>Storage, security and international processing</h2>
@@ -111,7 +111,7 @@ export default function Page() {
 
             <h2>Children</h2>
             <p>
-              K53 Fast is intended for learner’s licence candidates aged 16 and
+              K53 Next is intended for learner’s licence candidates aged 16 and
               older. It is not directed to children under 13, and we do not
               knowingly collect personal information from children under 13. If
               you believe a child has provided information contrary to this
@@ -139,7 +139,7 @@ export default function Page() {
 
             <h2>Changes</h2>
             <p>
-              We may update this policy when K53 Fast, our service providers or
+              We may update this policy when K53 Next, our service providers or
               legal requirements change. The effective date above will be
               updated when material changes are published.
             </p>

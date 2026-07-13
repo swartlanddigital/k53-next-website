@@ -8,7 +8,7 @@ const IOL_SOURCE = "https://iol.co.za/news/2026-05-23-only-40-pass-south-africas
 
 export const metadata: Metadata = {
   title: "New Computerised Learner's Licence Test South Africa",
-  description: "Understand the new computerised learner's licence test, including randomised questions, touchscreen testing, pass-rate concerns and how to prepare with K53 Fast.",
+  description: "Understand the new computerised learner's licence test, including randomised questions, touchscreen testing, pass-rate concerns and how to prepare with K53 Next.",
   alternates: { canonical: "/computerised-learners-test/" },
 };
 
@@ -19,8 +19,8 @@ export default function ComputerisedTestPage() {
     headline: "How to prepare for South Africa's new computerised learner's licence test",
     datePublished: "2026-07-12",
     dateModified: "2026-07-12",
-    author: { "@type": "Organization", name: "K53 Fast" },
-    publisher: { "@type": "Organization", name: "K53 Fast" },
+    author: { "@type": "Organization", name: "K53 Next" },
+    publisher: { "@type": "Organization", name: "K53 Next" },
     description: "A practical guide to CLLT screen-based testing, randomised questions, timed pressure and K53 preparation.",
   };
 
@@ -61,7 +61,7 @@ export default function ComputerisedTestPage() {
 
               <h2 id="pass-rate">Why the reported 40% pass rate matters</h2>
               <p>IOL reported in May 2026 that the national learner’s licence pass rate had fallen from 68% to 40% since the digital system was rolled out in 2021. The report said candidates commonly described oddly phrased questions, detailed wording, timed pressure and second-guessing as major difficulties.</p>
-              <p>The 40% figure is a media-reported national statistic—not a K53 Fast user result and not a guarantee about any individual testing centre. It does, however, underline why simple memorisation is a weak strategy.</p>
+              <p>The 40% figure is a media-reported national statistic—not a K53 Next user result and not a guarantee about any individual testing centre. It does, however, underline why simple memorisation is a weak strategy.</p>
               <div className="quote-card"><strong>New-test mindset</strong><p>Don’t only learn which option is correct. Learn why it is correct, how the same rule can be worded differently, and how to decide without panicking.</p></div>
 
               <h2 id="prepare">How to prepare for a screen-based test</h2>
@@ -80,7 +80,7 @@ export default function ComputerisedTestPage() {
                 <a href={GOVERNMENT_SOURCE}><b>Official system details</b><span>Western Cape Mobility Department — CLLT launch, 28 May 2025 ↗</span></a>
                 <a href={IOL_SOURCE}><b>Pass-rate and candidate context</b><span>IOL — “Only 40% pass South Africa’s learner’s licence test”, 23 May 2026 ↗</span></a>
               </div>
-              <p className="tiny-copy">K53 Fast is an independent study tool. We are not affiliated with the Western Cape Government, RTMC, NaTIS or any licensing authority.</p>
+              <p className="tiny-copy">K53 Next is an independent study tool. We are not affiliated with the Western Cape Government, RTMC, NaTIS or any licensing authority.</p>
               <p><Link className="text-link" href="/k53-practice-test">Next: build your K53 practice plan →</Link></p>
             </div>
           </div>

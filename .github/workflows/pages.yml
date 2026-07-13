@@ -1,4 +1,4 @@
-name: Deploy K53 Fast website
+name: Deploy K53 Next website
 
 on:
   push:

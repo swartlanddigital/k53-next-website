@@ -1,11 +1,11 @@
-# K53 Fast marketing website
+# K53 Next marketing website
 
-The standalone public-facing website for K53 Fast, a South African K53 learner's licence study app.
+The standalone public-facing website for K53 Next, a South African K53 learner's licence study app.
 
 ## What is included
 
 - Colourful, mobile-first campaign homepage for learner drivers aged 17–25
-- Real K53 Fast app screenshots and sign-focused question imagery
+- Real K53 Next app screenshots and sign-focused question imagery
 - Web-app call to action plus honest App Store and Google Play “Coming soon” states
 - Dedicated search pages for the new computerised learner's licence test, K53 learner tests, road signs, practice tests and learner-app queries
 - FAQ, privacy policy, terms, structured data, sitemap, robots rules and social sharing artwork
@@ -32,4 +32,4 @@ The live web-app URL is defined as `APP_URL` in `app/components.tsx`. App Store 
 
 ## Important disclaimer
 
-K53 Fast is an independent study tool. It is not affiliated with the South African government, a Driving Licence Testing Centre or a licensing authority, and it does not guarantee a test pass.
+K53 Next is an independent study tool. It is not affiliated with the South African government, a Driving Licence Testing Centre or a licensing authority, and it does not guarantee a test pass.
