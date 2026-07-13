@@ -68,7 +68,7 @@ export default function Home() {
             </div>
             <div className="hero-visual" aria-label="K53 Next screen-based practice">
               <span className="sticker sticker-lime">NEW<br /><small>TEST ERA</small></span>
-              <span className="sticker sticker-coral">DON&apos;T<br />GUESS!</span>
+              <span className="sticker sticker-mint">DON&apos;T<br />GUESS!</span>
               <Phone screen="/app-screens/practice.png" alt="K53 Next screen-based practice topics" tilt="tilt-left" />
               <Phone screen="/app-screens/mock-test.png" alt="K53 Next timed computerised mock tests" tilt="tilt-right" />
               <div className="float-sign"><img src={asset("/signs/two-way-traffic.webp")} alt="Two-way traffic warning sign" width="512" height="512" /></div>
