@@ -76,6 +76,7 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/loose-stones.webp",
     "public/play-store-qr.png",
     "public/llms.txt",
+    "public/07420f44ae6b3746a69864e8e04e5a8d03ecb92e0bf334cbc820e3ce71108bf6.txt",
     "public/CNAME",
   ];
   await Promise.all(required.map((path) => access(new URL(path, root))));
