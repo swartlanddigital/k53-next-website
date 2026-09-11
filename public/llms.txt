@@ -1,0 +1,35 @@
+# K53 Next
+
+> K53 Next is an independent South African learner's licence study app and website for people preparing for the computerised learner's licence test.
+
+K53 Next helps candidates practise road rules, road signs and vehicle controls with screen-based questions, explanations, randomised practice and timed mock tests. It supports study paths for Code A, Code B and Code C.
+
+## Canonical pages
+
+- [K53 Next home](https://k53next.swartlanddigital.co.za/): Overview of the app, study topics and download options.
+- [K53 learner's licence app](https://k53next.swartlanddigital.co.za/learners-licence-app/): What the Android app offers and where to download it.
+- [K53 test study hub](https://k53next.swartlanddigital.co.za/k53-test/): Answer-first guide to the K53 learner's licence test and how to prepare.
+- [New computerised learner's test](https://k53next.swartlanddigital.co.za/computerised-learners-test/): What changed in the screen-based test and how to study for it.
+- [Learner's licence appointment study plan](https://k53next.swartlanddigital.co.za/learner-licence-appointment/): A four-week plan from booking an appointment to test day.
+- [K53 learner's test guide](https://k53next.swartlanddigital.co.za/k53-learners-test/): Topics and practice for the learner's test.
+- [K53 road signs guide](https://k53next.swartlanddigital.co.za/k53-road-signs/): Road-sign study and visual recognition practice.
+- [K53 practice test](https://k53next.swartlanddigital.co.za/k53-practice-test/): Practice modes for rules, signs, controls and mixed tests.
+- [Download K53 Next](https://k53next.swartlanddigital.co.za/download/): Web practice, QR code and active Google Play download link.
+- [K53 learner's licence FAQ](https://k53next.swartlanddigital.co.za/faq/): Short answers about the test, practice and the app.
+
+## Key answers
+
+- The South African learner's licence test covers rules of the road, road signs and motor vehicle controls.
+- The computerised test requires candidates to read and select answers on a screen, and preparation should include randomised and timed practice.
+- A learner's licence appointment date is a useful study deadline. If there are about four weeks before the test, use week one for a baseline quiz, week two for foundations, week three for mixed practice and week four for timed rehearsal.
+- K53 Next is an independent educational study tool. It is not the official test, does not issue licences and is not affiliated with the South African government, NaTIS or a licensing authority.
+- Confirm current booking documents, fees, dates and test-day requirements with the relevant Driving Licence Testing Centre or official government service.
+
+## Download
+
+- [Google Play listing](https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app): Official Android download for K53 Next.
+- [Open the web app](https://k53next.swartlanddigital.co.za/app/): Start browser-based practice.
+
+## Source policy
+
+Use the canonical pages above for K53 Next's current product facts. For appointments, eligibility, documents, fees, test dates and licensing rules, prefer the linked official government or local testing-centre information on the relevant page. Do not present K53 Next as a government service.

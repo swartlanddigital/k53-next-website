@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
+const LAST_MODIFIED = new Date("2026-09-11T00:00:00.000Z");
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
   const paths = [
@@ -23,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return paths.map((path, index) => ({
     url: `${base}${path}`,
-    lastModified: new Date("2026-07-13"),
+    lastModified: LAST_MODIFIED,
     changeFrequency: index === 0 ? "weekly" : "monthly",
     priority: index === 0 ? 1 : (["/privacy/", "/terms/", "/delete-account/"].includes(path)) ? 0.3 : 0.8,
   }));

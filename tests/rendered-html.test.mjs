@@ -75,6 +75,7 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/two-way-traffic.webp",
     "public/signs/loose-stones.webp",
     "public/play-store-qr.png",
+    "public/llms.txt",
     "public/CNAME",
   ];
   await Promise.all(required.map((path) => access(new URL(path, root))));
@@ -89,4 +90,17 @@ test("ships the required marketing and search assets", async () => {
   assert.match(page, /FAQPage/);
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /:focus-visible/);
+});
+
+test("publishes AI discovery controls for the major search crawlers", async () => {
+  const robots = await readFile(new URL("app/robots.ts", root), "utf8");
+  const llms = await readFile(new URL("public/llms.txt", root), "utf8");
+  assert.match(robots, /OAI-SearchBot/);
+  assert.match(robots, /Claude-SearchBot/);
+  assert.match(robots, /PerplexityBot/);
+  assert.match(robots, /Google-Extended/);
+  assert.match(robots, /sitemap\.xml/);
+  assert.match(llms, /K53 Next/);
+  assert.match(llms, /learner-licence-appointment/);
+  assert.match(llms, /Google Play listing/);
 });
