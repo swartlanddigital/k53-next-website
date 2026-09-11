@@ -6,7 +6,7 @@ The standalone public-facing website for K53 Next, a South African K53 learner's
 
 - Colourful, mobile-first campaign homepage for learner drivers aged 17–25
 - Real K53 Next app screenshots and sign-focused question imagery
-- Web-app call to action plus honest App Store and Google Play “Coming soon” states
+- Web-app call to action plus a live Google Play download and honest App Store “Coming soon” state
 - Dedicated search pages for the new computerised learner's licence test, K53 learner tests, road signs, practice tests and learner-app queries
 - FAQ, privacy policy, terms, structured data, sitemap, robots rules and social sharing artwork
 - Responsive, keyboard-friendly layout with reduced-motion support
@@ -28,7 +28,7 @@ Set `NEXT_PUBLIC_SITE_URL` to the final public origin before building so canonic
 
 ## App links
 
-The live web-app URL is defined as `APP_URL` in `app/components.tsx`. App Store and Google Play buttons must remain marked “Coming soon” until verified listing URLs are available.
+The live web-app URL and verified Google Play listing URL are defined in `app/components.tsx`. The App Store button remains marked “Coming soon” until an iOS listing is available.
 
 ## Important disclaimer
 

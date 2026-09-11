@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 export const APP_URL = "https://cunning-pass-k53-fast.base44.app";
+export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app";
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const asset = (path: string) => `${BASE_PATH}${path}`;
 
@@ -13,11 +14,11 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Built for South Africa’s new computerised learner’s licence testing era.</p></div><div><h2>Study</h2><Link href="/computerised-learners-test">New computerised test</Link><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link></div><div><h2>Help & legal</h2><Link href="/faq">Frequently asked questions</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/delete-account">Delete account</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><p className="tiny">iOS and Android apps coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Next</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer>;
+  return <footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Built for South Africa’s new computerised learner’s licence testing era.</p></div><div><h2>Study</h2><Link href="/computerised-learners-test">New computerised test</Link><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link></div><div><h2>Help & legal</h2><Link href="/faq">Frequently asked questions</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/delete-account">Delete account</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><a href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Get the Android app ↗</a><p className="tiny">Android is live on Google Play. iOS is coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Next</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer>;
 }
 
 export function StoreButtons() {
-  return <div className="store-row" aria-label="Download options"><a className="store-card live" href={APP_URL}><span className="store-icon">↗</span><span><small>USE IT NOW</small><b>Open Web App</b></span></a><div className="store-card muted" aria-label="Apple App Store coming soon"><span className="store-icon">●</span><span><small>COMING SOON ON THE</small><b>App Store</b></span></div><div className="store-card muted" aria-label="Google Play coming soon"><span className="store-icon">▶</span><span><small>COMING SOON ON</small><b>Google Play</b></span></div></div>;
+  return <div className="store-row" aria-label="Download options"><a className="store-card live" href={APP_URL}><span className="store-icon">↗</span><span><small>USE IT NOW</small><b>Open Web App</b></span></a><div className="store-card muted" aria-label="Apple App Store coming soon"><span className="store-icon">●</span><span><small>COMING SOON ON THE</small><b>App Store</b></span></div><a className="store-card live play-store-card" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><span className="store-icon">▶</span><span><small>DOWNLOAD ON</small><b>Google Play</b></span></a></div>;
 }
 
 export function Phone({screen, alt, tilt=""}:{screen:string;alt:string;tilt?:string}) {
@@ -39,7 +40,7 @@ export const faqItems = [
   ["Can I practise K53 questions for free?","Yes. K53 Next's web app lets you start practising from your phone or computer. Choose a topic, review mistakes and try timed mock tests."],
   ["Does K53 Next cover Code A, B and C?","Yes. The question bank supports motorcycle, light motor vehicle and heavy motor vehicle study paths, commonly referred to as Code A, B and C."],
   ["Is this an official government app?","No. K53 Next is an independent study tool and is not affiliated with the South African government, a driving licence testing centre or a licensing authority."],
-  ["Are the App Store and Google Play versions available?","Not yet. The iOS and Android versions are marked Coming soon. You can use the full web app now in your mobile browser."],
+    ["Are the App Store and Google Play versions available?","The Android version is live on Google Play now. The iOS version is still coming soon, and you can use the full web app in your mobile browser."],
   ["Will using this app guarantee that I pass?","No study tool can guarantee a result. K53 Next helps you practise consistently, identify weak areas and become more confident before your test."],
 ];
 

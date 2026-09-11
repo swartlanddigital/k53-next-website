@@ -25,6 +25,9 @@ test("server-renders the finished K53 Next homepage", async () => {
   assert.match(html, /The test changed/);
   assert.match(html, /1,574 digital questions/);
   assert.match(html, /Practise on screen free/);
+  assert.match(html, /NOW LIVE ON GOOGLE PLAY/);
+  assert.match(html, /play\.google\.com\/store\/apps\/details\?id=/);
+  assert.match(html, /play-store-qr\.png/);
   assert.match(html, /westerncape\.gov\.za/);
   assert.match(html, /iol\.co\.za/);
   assert.match(html, /Independent study tool/);
@@ -68,6 +71,7 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/dead-end.webp",
     "public/signs/two-way-traffic.webp",
     "public/signs/loose-stones.webp",
+    "public/play-store-qr.png",
   ];
   await Promise.all(required.map((path) => access(new URL(path, root))));
   const [layout, page, css] = await Promise.all([

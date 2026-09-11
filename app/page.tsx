@@ -7,6 +7,7 @@ import {
   Footer,
   Header,
   Phone,
+  PLAY_STORE_URL,
   StoreButtons,
   asset,
   faqItems,
@@ -170,12 +171,12 @@ export default function Home() {
         <section className="section download" id="download">
           <div className="shell download-card">
             <div>
-              <span className="eyebrow">THE DIGITAL TEST NEEDS DIGITAL PREP</span>
-              <h2>Practise now.<br />Download soon.</h2>
-              <p>The mobile web app is live today. App Store and Google Play versions are coming soon.</p>
+              <span className="eyebrow">NOW LIVE ON GOOGLE PLAY</span>
+              <h2>Practise now.<br />Download K53 Next.</h2>
+              <p>Prepare for the new computerised learner&apos;s test on the web or download the Android app for focused practice wherever you study.</p>
               <StoreButtons />
             </div>
-            <div className="download-art"><div className="qr-fake" aria-hidden="true"><span>▦</span><small>OPEN WEB APP</small></div><span className="scribble">START<br />HERE ↙</span></div>
+            <div className="download-art"><a className="qr-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer" aria-label="Scan the QR code to download K53 Next from Google Play"><div className="qr-card"><img src={asset("/play-store-qr.png")} alt="QR code for the K53 Next Google Play download" width="640" height="640" /><span className="qr-card-label">SCAN TO DOWNLOAD</span><span className="qr-card-store">Google Play</span></div></a><span className="scribble">SCAN<br />TO GET IT ↙</span></div>
           </div>
         </section>
 
