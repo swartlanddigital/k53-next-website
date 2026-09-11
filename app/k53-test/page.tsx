@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, SITE_URL } from "../components";
 
 export const metadata: Metadata = {
   title: "K53 Test | Learner's Licence Practice South Africa",
@@ -20,8 +20,8 @@ export default function Page() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-          { "@type": "ListItem", position: 2, name: "K53 Test", item: "/k53-test/" },
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "K53 Test", item: `${SITE_URL}/k53-test/` },
         ],
       },
       {

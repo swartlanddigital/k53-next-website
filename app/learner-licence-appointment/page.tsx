@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, SITE_URL } from "../components";
 
 const GOVERNMENT_BOOKING_URL = "https://www.gov.za/services/driving-licence/apply-learners-licence";
 const WESTERN_CAPE_BOOKING_URL = "https://www.westerncape.gov.za/service/learners-licence";
@@ -24,8 +24,8 @@ export default function Page() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-          { "@type": "ListItem", position: 2, name: "Learner's Licence Appointment", item: "/learner-licence-appointment/" },
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Learner's Licence Appointment", item: `${SITE_URL}/learner-licence-appointment/` },
         ],
       },
       {

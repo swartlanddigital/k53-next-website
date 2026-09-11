@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, StoreButtons, asset } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, SITE_URL, StoreButtons, asset } from "../components";
 
 export const metadata: Metadata = {
   title: "Download K53 Next | K53 Learner's Licence App",
@@ -21,8 +21,8 @@ export default function Page() {
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-          { "@type": "ListItem", position: 2, name: "Download K53 Next", item: "/download/" },
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Download K53 Next", item: `${SITE_URL}/download/` },
         ],
       },
       {
