@@ -41,11 +41,21 @@ test("renders every crawlable content route with unique metadata", async () => {
     ["/computerised-learners-test", "New Computerised Learner&#x27;s Licence Test South Africa"],
     ["/k53-learners-test", "K53 Learner&#x27;s Licence Test Practice"],
     ["/k53-road-signs", "K53 Road Signs"],
+    ["/k53-vehicle-controls", "K53 Vehicle Controls Practice"],
     ["/learners-licence-app", "K53 Learner&#x27;s Licence App"],
     ["/k53-practice-test", "Free K53 Learner&#x27;s Licence Practice Test"],
     ["/k53-test", "K53 Test"],
+    ["/learner-licence-test-questions", "Learner&#x27;s Licence Test Questions South Africa"],
     ["/download", "Download K53 Next"],
     ["/learner-licence-appointment", "Learner&#x27;s Licence Appointment"],
+    ["/learner-licence-appointment-documents", "Learner&#x27;s Licence Appointment Documents South Africa"],
+    ["/after-booking-learner-licence-test", "What to Study After Booking Your Learner&#x27;s Licence Test"],
+    ["/waiting-for-learner-licence-test", "Waiting for Your Learner&#x27;s Licence Test"],
+    ["/four-week-learner-licence-study-plan", "Four-Week Learner&#x27;s Licence Study Plan South Africa"],
+    ["/code-8-learners-licence-test", "Code 8 Learner&#x27;s Licence Test Practice"],
+    ["/code-10-learners-licence-test", "Code 10 Learner&#x27;s Licence Test Preparation"],
+    ["/motorcycle-learners-licence-practice", "Motorcycle Learner&#x27;s Licence Practice South Africa"],
+    ["/official-learner-driver-manuals", "Official Learner Driver Manuals South Africa"],
     ["/faq", "K53 Learner&#x27;s Licence Test FAQ"],
     ["/support", "Support"],
     ["/privacy", "Privacy Policy"],
@@ -76,6 +86,11 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/loose-stones.webp",
     "public/play-store-qr.png",
     "public/play-store/google-play-icon.png",
+    "public/payment/yoco.png",
+    "public/payment/cards-wallets.webp",
+    "public/manuals/rules-of-the-road-v100-jun-2012.pdf",
+    "public/manuals/road-traffic-signs-v100-jun-2012.pdf",
+    "public/manuals/vehicle-controls-v100-jun-2012.pdf",
     "public/llms.txt",
     "public/07420f44ae6b3746a69864e8e04e5a8d03ecb92e0bf334cbc820e3ce71108bf6.txt",
     "public/CNAME",
@@ -94,7 +109,10 @@ test("ships the required marketing and search assets", async () => {
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /:focus-visible/);
   assert.match(css, /mobile-download-bar/);
+  assert.match(css, /payment-trust/);
   assert.match(components, /google-play-icon/);
+  assert.match(components, /manuals\/rules-of-the-road-v100-jun-2012\.pdf/);
+  assert.match(page, /OfficialManuals/);
 });
 
 test("publishes AI discovery controls for the major search crawlers", async () => {

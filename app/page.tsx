@@ -7,6 +7,7 @@ import {
   Footer,
   GooglePlayButton,
   Header,
+  OfficialManuals,
   Phone,
   PLAY_STORE_URL,
   StoreButtons,
@@ -190,11 +191,13 @@ export default function Home() {
             <div className="learner-search-grid">
               <article><span>01</span><h3>Road rules</h3><p>Practise right of way, speed, lane use, road markings and safe following behaviour.</p><Link className="text-link" href="/k53-learners-test">Study the learner&apos;s test →</Link></article>
               <article><span>02</span><h3>Road signs</h3><p>Learn the shapes, colours, symbols and actions behind South African K53 road signs.</p><Link className="text-link" href="/k53-road-signs">Practise road signs →</Link></article>
-              <article><span>03</span><h3>Vehicle controls</h3><p>Revise the controls and safety checks for Code A, Code B or Code C before you write.</p><Link className="text-link" href="/k53-practice-test">Start a practice test →</Link></article>
+              <article><span>03</span><h3>Vehicle controls</h3><p>Revise the controls and safety checks for Code A, Code B or Code C before you write.</p><Link className="text-link" href="/k53-vehicle-controls">Study vehicle controls →</Link></article>
             </div>
             <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><div className="appointment-actions"><Link className="button button-dark" href="/learner-licence-appointment">See the four-week study plan →</Link><GooglePlayButton className="button-outline-dark">Download now ↗</GooglePlayButton></div></div>
           </div>
         </section>
+
+        <OfficialManuals className="homepage-manuals" />
 
         <section className="section faq-home">
           <div className="shell faq-grid">

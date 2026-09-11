@@ -61,6 +61,17 @@ h1,h2,h3{font-family:"Segoe UI Variable Display","Aptos Display",Aptos,"Segoe UI
 .appointment-callout h3{font-size:28px;line-height:1.05;margin:10px 0 8px;max-width:700px}
 .appointment-callout p{margin:0;max-width:700px;color:var(--ink)}
 .appointment-callout .eyebrow{color:var(--ink)}
+.official-manuals-section{background:#f6f8f7;padding:90px 0}
+.official-manuals-section .section-head{margin-bottom:35px}
+.official-manuals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.official-manual-card{display:flex;flex-direction:column;align-items:flex-start;background:#fff;border:1px solid var(--ink);border-radius:20px;padding:28px;box-shadow:0 14px 36px rgba(1,9,34,.12)}
+.manual-label{display:inline-flex;padding:6px 9px;border-radius:7px;background:var(--lime);color:var(--ink);font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+.official-manual-card h3{font-size:26px;margin:22px 0 10px}
+.official-manual-card p{color:#4d5264;min-height:82px;margin:0 0 22px}
+.manual-download{margin-top:auto;min-height:46px;padding-inline:15px;font-size:13px;box-shadow:none}
+.manuals-note{margin:25px 0 0;color:#6a6f82;font-size:12px}
+@media(max-width:900px){.official-manuals-grid{grid-template-columns:1fr 1fr}.official-manual-card p{min-height:auto}}
+@media(max-width:620px){.official-manuals-section{padding:75px 0}.official-manuals-grid{grid-template-columns:1fr}.official-manual-card h3{font-size:24px}}
 @media(max-width:900px){.learner-search-grid{grid-template-columns:1fr}.cta-actions{align-items:flex-start}}
 @media(max-width:900px){.appointment-callout{align-items:flex-start;flex-direction:column}}
 @media(max-width:620px){.cta-actions{width:100%;flex-direction:column;align-items:stretch}.cta-actions .button{width:100%}.page-hero-actions{flex-direction:column;align-items:stretch}.page-hero-actions .button{width:100%}.lead-copy{font-size:18px!important}.appointment-callout{padding:24px 20px}.appointment-callout h3{font-size:24px}}
@@ -88,6 +99,12 @@ h1,h2,h3{font-family:"Segoe UI Variable Display","Aptos Display",Aptos,"Segoe UI
 .faq-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:24px}
 .footer-play-link{display:inline-flex!important;align-items:center;gap:8px}
 .footer-play-link .google-play-mark{width:22px;height:22px}
+.payment-trust{display:flex;flex-direction:column;gap:8px;margin-top:9px}
+.payment-trust-label{color:#fff;font-size:11px;font-weight:900;letter-spacing:.8px;text-transform:uppercase}
+.payment-badges{display:flex;align-items:center;flex-wrap:wrap;gap:8px;min-height:38px}
+.payment-logo{height:34px;width:auto;object-fit:contain;border-radius:5px}
+.payment-yoco{width:56px;height:34px;background:#fff}
+.payment-cards{width:150px;height:34px;background:#fff}
 .mobile-download-bar{display:none}
 @media(max-width:900px){.section-actions{align-items:flex-start}.faq-actions{align-items:flex-start}}
 @media(max-width:620px){
