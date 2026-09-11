@@ -5,6 +5,7 @@ import {
   CTA,
   FAQList,
   Footer,
+  GooglePlayButton,
   Header,
   Phone,
   PLAY_STORE_URL,
@@ -59,7 +60,7 @@ export default function Home() {
               </p>
               <div className="hero-actions">
                 <a className="button" href={APP_URL}>Start learner&apos;s test practice ↗</a>
-                <a className="text-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download now on Google Play →</a>
+                <GooglePlayButton className="button-hero-play">Download now on Google Play ↗</GooglePlayButton>
               </div>
               <div className="trust-row">
                 <span>✓ 1,574 learner&apos;s licence questions</span>
@@ -147,7 +148,7 @@ export default function Home() {
                 <li><b>Timed mock tests</b><span>Learn to stay calm while the clock is running.</span></li>
                 <li><b>Mistake review</b><span>Understand why an answer was wrong before trying again.</span></li>
               </ul>
-              <a className="button" href={APP_URL}>Start screen practice ↗</a>
+              <div className="section-actions"><a className="button" href={APP_URL}>Start screen practice ↗</a><GooglePlayButton className="button-secondary-light">Get the Android app ↗</GooglePlayButton></div>
             </div>
           </div>
         </section>
@@ -158,7 +159,7 @@ export default function Home() {
               <span className="eyebrow">IMAGE QUESTIONS MATTER</span>
               <h2>See it.<br />Know it.<br /><em>Click it.</em></h2>
               <p>Computerised testing makes clear visual recognition essential. Practise road signs in square, screen-friendly cards before they appear in a randomised test.</p>
-              <Link className="text-link light" href="/k53-road-signs">Practise K53 road signs →</Link>
+              <div className="section-actions signs-actions"><Link className="text-link light" href="/k53-road-signs">Practise K53 road signs →</Link><GooglePlayButton className="button-signs-play">Download the app ↗</GooglePlayButton></div>
             </div>
             <div className="sign-cards">
               <figure><img src={asset("/signs/railway-warning.webp")} alt="Railway crossing warning sign" width="512" height="512" /><figcaption>Warning signs</figcaption></figure>
@@ -191,13 +192,13 @@ export default function Home() {
               <article><span>02</span><h3>Road signs</h3><p>Learn the shapes, colours, symbols and actions behind South African K53 road signs.</p><Link className="text-link" href="/k53-road-signs">Practise road signs →</Link></article>
               <article><span>03</span><h3>Vehicle controls</h3><p>Revise the controls and safety checks for Code A, Code B or Code C before you write.</p><Link className="text-link" href="/k53-practice-test">Start a practice test →</Link></article>
             </div>
-            <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><div className="appointment-actions"><Link className="button button-dark" href="/learner-licence-appointment">See the four-week study plan →</Link><a className="button button-outline-dark" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download now ↗</a></div></div>
+            <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><div className="appointment-actions"><Link className="button button-dark" href="/learner-licence-appointment">See the four-week study plan →</Link><GooglePlayButton className="button-outline-dark">Download now ↗</GooglePlayButton></div></div>
           </div>
         </section>
 
         <section className="section faq-home">
           <div className="shell faq-grid">
-            <div><span className="eyebrow">BEFORE YOU WRITE, QUICK ANSWERS</span><h2>Ready for your learner&apos;s test?</h2><p>Get clear answers about the new computerised format and how to prepare.</p><Link className="text-link" href="/faq">View all learner&apos;s test FAQs →</Link></div>
+            <div><span className="eyebrow">BEFORE YOU WRITE, QUICK ANSWERS</span><h2>Ready for your learner&apos;s test?</h2><p>Get clear answers about the new computerised format and how to prepare.</p><div className="faq-actions"><Link className="text-link" href="/faq">View all learner&apos;s test FAQs →</Link><GooglePlayButton className="button-dark">Download K53 Next ↗</GooglePlayButton></div></div>
             <FAQList limit={6} />
           </div>
         </section>

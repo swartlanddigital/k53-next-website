@@ -75,15 +75,17 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/two-way-traffic.webp",
     "public/signs/loose-stones.webp",
     "public/play-store-qr.png",
+    "public/play-store/google-play-icon.png",
     "public/llms.txt",
     "public/07420f44ae6b3746a69864e8e04e5a8d03ecb92e0bf334cbc820e3ce71108bf6.txt",
     "public/CNAME",
   ];
   await Promise.all(required.map((path) => access(new URL(path, root))));
-  const [layout, page, css] = await Promise.all([
+  const [layout, page, css, components] = await Promise.all([
     readFile(new URL("app/layout.tsx", root), "utf8"),
     readFile(new URL("app/page.tsx", root), "utf8"),
     readFile(new URL("app/globals.css", root), "utf8"),
+    readFile(new URL("app/components.tsx", root), "utf8"),
   ]);
   assert.match(layout, /en-ZA/);
   assert.match(layout, /\/og\.png/);
@@ -91,6 +93,21 @@ test("ships the required marketing and search assets", async () => {
   assert.match(page, /FAQPage/);
   assert.match(css, /prefers-reduced-motion/);
   assert.match(css, /:focus-visible/);
+  assert.match(css, /mobile-download-bar/);
+  assert.match(components, /google-play-icon/);
+});
+
+test("publishes AI discovery controls for the major search crawlers", async () => {
+  const robots = await readFile(new URL("app/robots.ts", root), "utf8");
+  const llms = await readFile(new URL("public/llms.txt", root), "utf8");
+  assert.match(robots, /OAI-SearchBot/);
+  assert.match(robots, /Claude-SearchBot/);
+  assert.match(robots, /PerplexityBot/);
+  assert.match(robots, /Google-Extended/);
+  assert.match(robots, /sitemap\.xml/);
+  assert.match(llms, /K53 Next/);
+  assert.match(llms, /learner-licence-appointment/);
+  assert.match(llms, /Google Play listing/);
 });
 
 test("publishes AI discovery controls for the major search crawlers", async () => {

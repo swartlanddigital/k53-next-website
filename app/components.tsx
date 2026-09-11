@@ -5,13 +5,18 @@ export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://k53next.swartlanddigital.co.za";
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const asset = (path: string) => `${BASE_PATH}${path}`;
+export const GOOGLE_PLAY_ICON = "/play-store/google-play-icon.png";
 
 export function Logo() {
   return <Link className="logo" href="/" aria-label="K53 Next home"><img className="logo-image" src={asset("/k53-next-logo.png")} alt="" width="1254" height="1254" /></Link>;
 }
 
 export function GooglePlayMark() {
-  return <svg className="google-play-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.2 2.7 20.6 12 3.2 21.3A1.5 1.5 0 0 1 1 20V4a1.5 1.5 0 0 1 2.2-1.3Z"/></svg>;
+  return <span className="google-play-mark" aria-hidden="true"><img src={asset(GOOGLE_PLAY_ICON)} alt="" width="520" height="572" /></span>;
+}
+
+export function GooglePlayButton({children="Get it on Google Play ↗", className=""}:{children?:React.ReactNode;className?:string}) {
+  return <a className={`button play-button ${className}`.trim()} href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /><span>{children}</span></a>;
 }
 
 export function Header() {
@@ -19,7 +24,7 @@ export function Header() {
 }
 
 export function Footer() {
-  return <footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Built for South Africa’s new computerised learner’s licence testing era.</p></div><div><h2>Study</h2><Link href="/computerised-learners-test">New computerised test</Link><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-test">K53 test study hub</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link><Link href="/learner-licence-appointment">Appointment → test plan</Link></div><div><h2>Help & legal</h2><Link href="/faq">Frequently asked questions</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/delete-account">Delete account</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><a href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download now on Google Play ↗</a><p className="tiny">Android is live on Google Play. iOS is coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Next</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer>;
+  return <><footer className="footer"><div className="shell footer-grid"><div><Logo/><p>Built for South Africa’s new computerised learner’s licence testing era.</p></div><div><h2>Study</h2><Link href="/computerised-learners-test">New computerised test</Link><Link href="/k53-learners-test">K53 learner test</Link><Link href="/k53-test">K53 test study hub</Link><Link href="/k53-road-signs">K53 road signs</Link><Link href="/k53-practice-test">Practice tests</Link><Link href="/learner-licence-appointment">Appointment → test plan</Link></div><div><h2>Help & legal</h2><Link href="/faq">Frequently asked questions</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy Policy</Link><Link href="/terms">Terms of Service</Link><Link href="/delete-account">Delete account</Link></div><div><h2>Start now</h2><a href={APP_URL}>Open the web app ↗</a><a className="footer-play-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /><span>Download now on Google Play <span aria-hidden="true">↗</span></span></a><p className="tiny">Android is live on Google Play. iOS is coming soon.</p></div></div><div className="shell footer-note"><span>© 2026 K53 Next</span><span>Independent study tool. Not affiliated with the South African government or a licensing authority.</span></div></footer><div className="mobile-download-bar" aria-label="Download K53 Next"><span className="mobile-download-copy"><b>Ready to write your learners?</b><small>Get K53 Next on Android</small></span><a className="mobile-download-button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /><span>Download</span><span aria-hidden="true">↗</span></a></div></>;
 }
 
 export function StoreButtons() {
@@ -35,7 +40,7 @@ export function PageHero({eyebrow,title,lede,children}:{eyebrow:string;title:str
 }
 
 export function CTA() {
-  return <section className="cta"><div className="shell cta-card"><div><span className="eyebrow dark">READY TO WRITE YOUR LEARNERS?</span><h2>Turn “I hope” into “I know.”</h2><p>Practise the questions, signs and controls before you book or write your learner&apos;s licence test.</p></div><div className="cta-actions"><a className="button button-dark" href={APP_URL}>Practice on the web app ↗</a><a className="button button-outline-dark" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Get it on Google Play ↗</a></div></div></section>;
+  return <section className="cta"><div className="shell cta-card"><div><span className="eyebrow dark">READY TO WRITE YOUR LEARNERS?</span><h2>Turn “I hope” into “I know.”</h2><p>Practise the questions, signs and controls before you book or write your learner&apos;s licence test.</p></div><div className="cta-actions"><a className="button button-dark" href={APP_URL}>Practice on the web app ↗</a><GooglePlayButton className="button-outline-dark" /></div></div></section>;
 }
 
 export const faqItems = [
