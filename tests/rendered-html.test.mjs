@@ -21,13 +21,13 @@ test("server-renders the finished K53 Next homepage", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<html lang="en-ZA">/i);
-  assert.match(html, /<title>K53 Next \| Prepare for the New Computerised/i);
-  assert.match(html, /The test changed/);
-  assert.match(html, /1,574 digital questions/);
-  assert.match(html, /Practise on screen free/);
-  assert.match(html, /NOW LIVE ON GOOGLE PLAY/);
+  assert.match(html, /<title>K53 Next \| K53 Learner&#x27;s Licence App South Africa/i);
+  assert.match(html, /1,574 learner&#x27;s licence questions/);
+  assert.match(html, /Write your learners/);
+  assert.match(html, /Android is live on Google Play/);
   assert.match(html, /play\.google\.com\/store\/apps\/details\?id=/);
   assert.match(html, /play-store-qr\.png/);
+  assert.match(html, /learner-licence-appointment/);
   assert.match(html, /westerncape\.gov\.za/);
   assert.match(html, /iol\.co\.za/);
   assert.match(html, /Independent study tool/);
@@ -39,11 +39,14 @@ test("server-renders the finished K53 Next homepage", async () => {
 test("renders every crawlable content route with unique metadata", async () => {
   const routes = [
     ["/computerised-learners-test", "New Computerised Learner&#x27;s Licence Test South Africa"],
-    ["/k53-learners-test", "K53 Computerised Learner"],
+    ["/k53-learners-test", "K53 Learner&#x27;s Licence Test Practice"],
     ["/k53-road-signs", "K53 Road Signs"],
-    ["/learners-licence-app", "Learner&#x27;s Licence App"],
-    ["/k53-practice-test", "Free K53 Practice Test"],
-    ["/faq", "K53 Learner App Frequently Asked Questions"],
+    ["/learners-licence-app", "K53 Learner&#x27;s Licence App"],
+    ["/k53-practice-test", "Free K53 Learner&#x27;s Licence Practice Test"],
+    ["/k53-test", "K53 Test"],
+    ["/download", "Download K53 Next"],
+    ["/learner-licence-appointment", "Learner&#x27;s Licence Appointment"],
+    ["/faq", "K53 Learner&#x27;s Licence Test FAQ"],
     ["/support", "Support"],
     ["/privacy", "Privacy Policy"],
     ["/terms", "Terms of Service"],

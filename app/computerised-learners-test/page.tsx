@@ -8,7 +8,7 @@ const IOL_SOURCE = "https://iol.co.za/news/2026-05-23-only-40-pass-south-africas
 
 export const metadata: Metadata = {
   title: "New Computerised Learner's Licence Test South Africa",
-  description: "Understand the new computerised learner's licence test, including randomised questions, touchscreen testing, pass-rate concerns and how to prepare with K53 Next.",
+  description: "Learn what changed in South Africa's new computerised learner's licence test and how to prepare before you write with K53 Next screen-based practice.",
   alternates: { canonical: "/computerised-learners-test/" },
 };
 

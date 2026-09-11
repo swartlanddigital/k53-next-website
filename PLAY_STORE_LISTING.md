@@ -2,31 +2,39 @@
 
 ## App name
 
-K53 Next
+K53 Next Study
 
 ## Short description
 
-Study 1,574 K53 questions, road signs and computerised mock tests.
+Independent K53 road-rule, road-sign and vehicle-control practice.
 
 ## Full description
 
-Prepare for South Africa's computerised learner's licence test with focused K53 practice built for the new testing experience.
+OFFICIAL SOURCE FOR LEARNER'S LICENCE INFORMATION
 
-K53 Next gives you a complete study system in one app:
+https://www.gov.za/services/driving-licence/apply-learners-licence
 
-- Practise from a bank of 1,574 K53 questions.
-- Study road rules, road signs and vehicle controls by topic.
-- See clear road-sign and question images where they are needed.
-- Choose Code A, Code B or Code C preparation.
-- Run quick drills, half exams and full 64-question simulations.
-- Use timed mode to practise under realistic test pressure.
-- Review mistakes, bookmarks and weaker topics.
-- Track accuracy, completed questions and mock-test progress.
-- Continue on Android or the web with the same account.
+DISCLAIMER: K53 NEXT STUDY DOES NOT REPRESENT ANY GOVERNMENT ENTITY.
 
-The app is designed around the new computerised learner's licence testing era. Its mock-test structure helps you prepare for road rules, road signs and vehicle controls while building confidence with the format and timing of a computer-based test.
+K53 Next Study is an independently created, privately owned educational practice app. It is not created, affiliated with, endorsed by, authorised by or operated by any government department, eNaTIS, the RTMC, a Driving Licence Testing Centre or a licensing authority.
 
-K53 Next is an independent educational study tool. It is not affiliated with, endorsed by or operated by the South African government, a Driving Licence Testing Centre or any licensing authority. Practice results do not guarantee a pass. Always confirm current official requirements with the relevant licensing authority.
+The app does not issue licences, make official bookings, collect official fees, verify identities, access government records or provide official test results.
+
+All questions, explanations, images and mock tests in K53 Next Study are independently assembled study material. They are not official exam questions and are not copied from any live government test.
+
+INDEPENDENT STUDY FEATURES
+
+- Road-rule practice
+- Road-sign practice
+- Vehicle-control practice
+- Topic quizzes and timed mock tests
+- Mistake review, bookmarks and progress tracking
+
+Practice results do not guarantee a pass. Official requirements can change. Use the official source URL above and contact your local Driving Licence Testing Centre or licensing authority for current official information and assistance.
+
+PRIVACY POLICY
+
+https://swartlanddigital.github.io/k53-next-website/privacy/
 
 ## Category
 
@@ -34,11 +42,11 @@ Education
 
 ## Release name
 
-1.0.0 - Initial closed test
+1.0.1 - Compliance update
 
 ## Release notes
 
-Initial K53 Next closed-testing release with topic practice, road-sign questions, vehicle controls, timed mock tests, progress tracking and the complete 1,574-question study bank.
+Added prominent in-app government non-affiliation disclosures, an official gov.za source link, an in-app privacy-policy link, and clearer independent-study wording throughout the app.
 
 ## Prepared artwork
 

@@ -51,18 +51,18 @@ export default function Home() {
           <div className="road-line two" />
           <div className="shell hero-grid">
             <div className="hero-copy">
-              <div className="kicker"><span>💻</span> Built for the computerised test era</div>
-              <h1>The test changed.<br />Your prep <em>should too.</em></h1>
+              <div className="kicker"><span>💻</span> South Africa&apos;s learner&apos;s licence app</div>
+              <h1>Write your learners.<br />Prepare <em>smarter.</em></h1>
               <p className="hero-lede">
-                The new learner’s test is digital, randomised and screen-based. K53 Next trains you to read carefully,
-                handle tricky wording and stay sharp under timed pressure.
+                Preparing to write your learner&apos;s licence test? The new test is digital, randomised and screen-based.
+                K53 Next helps you practise road rules, road signs and vehicle controls before test day.
               </p>
               <div className="hero-actions">
-                <a className="button" href={APP_URL}>Practise on screen free ↗</a>
-                <Link className="text-link" href="/computerised-learners-test">What changed? →</Link>
+                <a className="button" href={APP_URL}>Start learner&apos;s test practice ↗</a>
+                <Link className="text-link" href="/download">Download the Android app →</Link>
               </div>
               <div className="trust-row">
-                <span>✓ 1,574 digital questions</span>
+                <span>✓ 1,574 learner&apos;s licence questions</span>
                 <span>✓ Timed mock tests</span>
                 <span>✓ Code A, B &amp; C</span>
               </div>
@@ -139,8 +139,8 @@ export default function Home() {
               <span className="bubble bubble-two">Weak section? →<br /><b>Drill it.</b></span>
             </div>
             <div>
-              <span className="eyebrow">PRACTISE LIKE YOU&apos;LL TEST</span>
-              <h2>Screen confidence before test-day pressure.</h2>
+              <span className="eyebrow">PRACTISE BEFORE YOU WRITE</span>
+              <h2>Screen confidence before your learner&apos;s test.</h2>
               <ul className="feature-list">
                 <li><b>Digital question flow</b><span>Build the habit of reading and answering on screen.</span></li>
                 <li><b>Randomised practice</b><span>Prepare for concepts appearing in unfamiliar combinations.</span></li>
@@ -171,18 +171,33 @@ export default function Home() {
         <section className="section download" id="download">
           <div className="shell download-card">
             <div>
-              <span className="eyebrow">NOW LIVE ON GOOGLE PLAY</span>
+              <span className="eyebrow">BEFORE YOU WRITE YOUR LEARNERS</span>
               <h2>Practise now.<br />Download K53 Next.</h2>
-              <p>Prepare for the new computerised learner&apos;s test on the web or download the Android app for focused practice wherever you study.</p>
+              <p>Prepare for your South African learner&apos;s licence test on the web or download the Android app for focused practice wherever you study.</p>
               <StoreButtons />
             </div>
             <div className="download-art"><a className="qr-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer" aria-label="Scan the QR code to download K53 Next from Google Play"><div className="qr-card"><img src={asset("/play-store-qr.png")} alt="QR code for the K53 Next Google Play download" width="640" height="640" /><span className="qr-card-label">SCAN TO DOWNLOAD</span><span className="qr-card-store">Google Play</span></div></a><span className="scribble">SCAN<br />TO GET IT ↙</span></div>
           </div>
         </section>
 
+        <section className="section learner-search-section" id="learner-prep">
+          <div className="shell">
+            <div className="section-head">
+              <div><span className="eyebrow">PREPARING TO WRITE?</span><h2>Your learner&apos;s licence study plan starts here.</h2></div>
+              <p>Build confidence before you book and write your learners. Study the three sections that matter, then practise in the same screen-first rhythm as the new test.</p>
+            </div>
+            <div className="learner-search-grid">
+              <article><span>01</span><h3>Road rules</h3><p>Practise right of way, speed, lane use, road markings and safe following behaviour.</p><Link className="text-link" href="/k53-learners-test">Study the learner&apos;s test →</Link></article>
+              <article><span>02</span><h3>Road signs</h3><p>Learn the shapes, colours, symbols and actions behind South African K53 road signs.</p><Link className="text-link" href="/k53-road-signs">Practise road signs →</Link></article>
+              <article><span>03</span><h3>Vehicle controls</h3><p>Revise the controls and safety checks for Code A, Code B or Code C before you write.</p><Link className="text-link" href="/k53-practice-test">Start a practice test →</Link></article>
+            </div>
+            <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><Link className="button" href="/learner-licence-appointment">See the four-week study plan →</Link></div>
+          </div>
+        </section>
+
         <section className="section faq-home">
           <div className="shell faq-grid">
-            <div><span className="eyebrow">NEW TEST, QUICK ANSWERS</span><h2>Before you tap start...</h2><p>What the computerised format means for your preparation.</p><Link className="text-link" href="/faq">View all FAQs →</Link></div>
+            <div><span className="eyebrow">BEFORE YOU WRITE, QUICK ANSWERS</span><h2>Ready for your learner&apos;s test?</h2><p>Get clear answers about the new computerised format and how to prepare.</p><Link className="text-link" href="/faq">View all learner&apos;s test FAQs →</Link></div>
             <FAQList limit={6} />
           </div>
         </section>

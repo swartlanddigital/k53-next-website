@@ -10,7 +10,7 @@ export function Logo() {
 }
 
 export function Header() {
-  return <header className="site-header"><div className="shell nav-wrap"><Logo /><nav aria-label="Main navigation"><Link href="/computerised-learners-test">New test</Link><Link href="/k53-learners-test">Learner test</Link><Link href="/k53-road-signs">Road signs</Link><Link href="/k53-practice-test">Practice</Link></nav><a className="button button-small" href={APP_URL}>Practise free <span aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><div className="shell nav-wrap"><Logo /><nav aria-label="Main navigation"><Link href="/computerised-learners-test">New test</Link><Link href="/k53-learners-test">Learner test</Link><Link href="/k53-road-signs">Road signs</Link><Link href="/k53-practice-test">Practice</Link></nav><Link className="button button-small" href="/download">Download app <span aria-hidden="true">↗</span></Link></div></header>;
 }
 
 export function Footer() {
@@ -30,17 +30,18 @@ export function PageHero({eyebrow,title,lede,children}:{eyebrow:string;title:str
 }
 
 export function CTA() {
-  return <section className="cta"><div className="shell cta-card"><div><span className="eyebrow dark">READY WHEN YOU ARE</span><h2>Turn “I hope” into “I know.”</h2><p>Start with a quick drill today. Your next correct answer is one tap away.</p></div><a className="button button-dark" href={APP_URL}>Start practising free ↗</a></div></section>;
+  return <section className="cta"><div className="shell cta-card"><div><span className="eyebrow dark">READY TO WRITE YOUR LEARNERS?</span><h2>Turn “I hope” into “I know.”</h2><p>Practise the questions, signs and controls before you book or write your learner&apos;s licence test.</p></div><div className="cta-actions"><a className="button button-dark" href={APP_URL}>Start free practice ↗</a><a className="button button-outline-dark" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download on Google Play ↗</a></div></div></section>;
 }
 
 export const faqItems = [
   ["What is the new computerised learner's licence test?","The Computerised Learner’s Licence Testing system replaces the manual booklet method with secure digital testing. In the Western Cape rollout, terminals use fingerprint verification, randomised questions and instant digital processing."],
   ["Why should I practise on a screen?","Screen-based practice helps you get comfortable reading carefully, choosing answers digitally and staying focused in a timed environment—the same skills candidates report struggling with in the computerised test."],
   ["What is the K53 learner's licence test?","It is the theory test used in South Africa to check your knowledge of road rules, road signs and vehicle controls before you can receive a learner's licence."],
-  ["Can I practise K53 questions for free?","Yes. K53 Next's web app lets you start practising from your phone or computer. Choose a topic, review mistakes and try timed mock tests."],
+  ["Can I practise for my learner's licence test for free?","Yes. K53 Next's web app lets you start practising from your phone or computer. Choose road rules, road signs or vehicle controls, review mistakes and try timed mock tests before you write."],
   ["Does K53 Next cover Code A, B and C?","Yes. The question bank supports motorcycle, light motor vehicle and heavy motor vehicle study paths, commonly referred to as Code A, B and C."],
   ["Is this an official government app?","No. K53 Next is an independent study tool and is not affiliated with the South African government, a driving licence testing centre or a licensing authority."],
-    ["Are the App Store and Google Play versions available?","The Android version is live on Google Play now. The iOS version is still coming soon, and you can use the full web app in your mobile browser."],
+  ["Can I use K53 Next before I write my learners?","Yes. Use K53 Next to prepare for your South African learner's licence test with screen-based questions, topic practice, mistake review and timed mock tests. It is an independent study tool, not an official test or government service."],
+  ["Are the App Store and Google Play versions available?","The Android version is live on Google Play now. The iOS version is still coming soon, and you can use the full web app in your mobile browser."],
   ["Will using this app guarantee that I pass?","No study tool can guarantee a result. K53 Next helps you practise consistently, identify weak areas and become more confident before your test."],
 ];
 
