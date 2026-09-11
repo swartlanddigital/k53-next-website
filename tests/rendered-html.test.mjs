@@ -72,6 +72,7 @@ test("ships the required marketing and search assets", async () => {
     "public/signs/two-way-traffic.webp",
     "public/signs/loose-stones.webp",
     "public/play-store-qr.png",
+    "public/CNAME",
   ];
   await Promise.all(required.map((path) => access(new URL(path, root))));
   const [layout, page, css] = await Promise.all([
