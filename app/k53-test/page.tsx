@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, Header, PageHero, PLAY_STORE_URL } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL } from "../components";
 
 export const metadata: Metadata = {
   title: "K53 Test | Learner's Licence Practice South Africa",
@@ -39,7 +39,7 @@ export default function Page() {
     <Header />
     <main id="main">
       <PageHero eyebrow="K53 TEST STUDY HUB" title="Prepare to write your learner&apos;s licence test." lede="Learn the K53 topics, practise the questions and get comfortable with the new computerised test format before test day.">
-        <div className="hero-actions page-hero-actions"><a className="button" href={APP_URL}>Start free K53 practice ↗</a><a className="button button-secondary" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download the Android app ↗</a></div>
+        <div className="hero-actions page-hero-actions"><a className="button" href={APP_URL}>Practice on the web app ↗</a><a className="button button-secondary" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Get it on Google Play ↗</a></div>
       </PageHero>
       <section className="content-page">
         <div className="shell content-grid">
@@ -56,7 +56,7 @@ export default function Page() {
             <div className="callout"><b>Already booked your test?</b> Follow the <Link className="text-link" href="/learner-licence-appointment">four-week learner&apos;s licence study plan →</Link> and use your test date as a clear preparation deadline.</div>
             <h2 id="codes">Code A, Code B and Code C</h2>
             <p>Your vehicle category changes the controls you need to know. Code A is associated with motorcycles, Code B with light motor vehicles and Code C with heavier vehicles. The shared road-rule and road-sign foundations still matter for every learner&apos;s licence path.</p>
-            <p><a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download K53 Next on Google Play ↗</a></p>
+            <p><a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Download K53 Next on Google Play ↗</a></p>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, Header, PageHero, PLAY_STORE_URL } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL } from "../components";
 
 const GOVERNMENT_BOOKING_URL = "https://www.gov.za/services/driving-licence/apply-learners-licence";
 const WESTERN_CAPE_BOOKING_URL = "https://www.westerncape.gov.za/service/learners-licence";
@@ -43,7 +43,7 @@ export default function Page() {
     <Header />
     <main id="main">
       <PageHero eyebrow="BOOKED OR PLANNING TO BOOK?" title="Turn your learner&apos;s licence appointment into a study deadline." lede="If your test date is several weeks away, use that time deliberately. Build knowledge first, then practise until the screen and the questions feel familiar.">
-        <div className="hero-actions page-hero-actions"><a className="button" href={APP_URL}>Start your study plan ↗</a><Link className="button button-secondary" href="/download">Download the Android app ↗</Link></div>
+        <div className="hero-actions page-hero-actions"><a className="button" href={APP_URL}>Practice on the web app ↗</a><a className="button button-secondary" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Get it on Google Play ↗</a></div>
       </PageHero>
       <section className="content-page">
         <div className="shell content-grid">
@@ -63,7 +63,7 @@ export default function Page() {
             <h2 id="official">Official booking resources</h2>
             <p>Use K53 Next for study, but use official government or local DLTC channels for bookings, current fees, documents and test-day rules.</p>
             <p><a className="text-link" href={NATIS_URL} target="_blank" rel="noreferrer">Open the NaTIS online portal ↗</a></p>
-            <p><a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download K53 Next on Google Play ↗</a></p>
+            <p><a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Download K53 Next on Google Play ↗</a></p>
           </div>
         </div>
       </section>

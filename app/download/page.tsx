@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { APP_URL, CTA, Footer, Header, PageHero, PLAY_STORE_URL, StoreButtons, asset } from "../components";
+import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, StoreButtons, asset } from "../components";
 
 export const metadata: Metadata = {
   title: "Download K53 Next | K53 Learner's Licence App",
@@ -50,7 +50,7 @@ export default function Page() {
     <Header />
     <main id="main">
       <PageHero eyebrow="DOWNLOAD BEFORE YOU WRITE" title="Download K53 Next and prepare to write your learners." lede="Get focused South African learner's licence practice on Android, or start in your browser right now.">
-        <a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download on Google Play ↗</a>
+        <a className="button" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Get it on Google Play ↗</a>
       </PageHero>
       <section className="section download download-page">
         <div className="shell download-card">

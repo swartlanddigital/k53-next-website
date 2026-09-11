@@ -64,3 +64,15 @@ h1,h2,h3{font-family:"Segoe UI Variable Display","Aptos Display",Aptos,"Segoe UI
 @media(max-width:900px){.learner-search-grid{grid-template-columns:1fr}.cta-actions{align-items:flex-start}}
 @media(max-width:900px){.appointment-callout{align-items:flex-start;flex-direction:column}}
 @media(max-width:620px){.cta-actions{width:100%;flex-direction:column;align-items:stretch}.cta-actions .button{width:100%}.page-hero-actions{flex-direction:column;align-items:stretch}.page-hero-actions .button{width:100%}.lead-copy{font-size:18px!important}.appointment-callout{padding:24px 20px}.appointment-callout h3{font-size:24px}}
+
+.header-actions{display:flex;align-items:center;gap:10px;flex:none}
+.button-web{background:var(--lime)}
+.play-header-button{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--ink);line-height:1.05}
+.play-header-button small{display:block;font-size:8px;letter-spacing:1px;text-align:left}
+.play-header-button b{display:block;font-size:13px}
+.google-play-mark{width:18px;height:18px;flex:none}
+.button .google-play-mark{margin-right:8px}
+.appointment-actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+@media(max-width:1180px){.site-header nav{gap:18px;font-size:13px}.nav-wrap{gap:18px}}
+@media(max-width:900px){.header-actions{gap:8px}.nav-wrap{gap:12px}}
+@media(max-width:620px){.header-actions{gap:6px}.header-actions .button-web{font-size:0;padding:0 11px}.header-actions .button-web:before{content:"Web app";font-size:12px}.play-header-button{padding:0 9px}.play-header-button small{font-size:7px}.play-header-button b{font-size:11px}.google-play-mark{width:16px;height:16px}.nav-wrap{gap:8px}}

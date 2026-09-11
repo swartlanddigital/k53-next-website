@@ -59,7 +59,7 @@ export default function Home() {
               </p>
               <div className="hero-actions">
                 <a className="button" href={APP_URL}>Start learner&apos;s test practice ↗</a>
-                <Link className="text-link" href="/download">Download the Android app →</Link>
+                <a className="text-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download now on Google Play →</a>
               </div>
               <div className="trust-row">
                 <span>✓ 1,574 learner&apos;s licence questions</span>
@@ -191,7 +191,7 @@ export default function Home() {
               <article><span>02</span><h3>Road signs</h3><p>Learn the shapes, colours, symbols and actions behind South African K53 road signs.</p><Link className="text-link" href="/k53-road-signs">Practise road signs →</Link></article>
               <article><span>03</span><h3>Vehicle controls</h3><p>Revise the controls and safety checks for Code A, Code B or Code C before you write.</p><Link className="text-link" href="/k53-practice-test">Start a practice test →</Link></article>
             </div>
-            <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><Link className="button" href="/learner-licence-appointment">See the four-week study plan →</Link></div>
+            <div className="appointment-callout"><div><span className="eyebrow">BOOKING YOUR TEST?</span><h3>Use the weeks between your appointment and test date wisely.</h3><p>If you have about a month to prepare, K53 Next gives you a simple path from baseline quiz to timed mock tests.</p></div><div className="appointment-actions"><Link className="button button-dark" href="/learner-licence-appointment">See the four-week study plan →</Link><a className="button button-outline-dark" href={PLAY_STORE_URL} target="_blank" rel="noreferrer">Download now ↗</a></div></div>
           </div>
         </section>
 
