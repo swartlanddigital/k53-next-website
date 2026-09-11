@@ -4,6 +4,7 @@ import "./globals.css";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 const playStoreUrl = "https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app";
+const androidPackage = "com.base69e9f3638e3e914a5f9614b0.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -19,9 +20,15 @@ export const metadata: Metadata = {
   twitter: { card:"summary_large_image", title:"Prepare for the new computerised learner's test", description:"Screen-based K53 practice for South Africa's new testing era.", images:["/og.png"] },
   robots: { index:true, follow:true, googleBot:{ index:true, follow:true, "max-image-preview":"large", "max-snippet":-1, "max-video-preview":-1 } },
   alternates: { canonical: "/" },
+  other: {
+    "al:android:package": androidPackage,
+    "al:android:app_name": "K53 Next",
+    "al:android:url": playStoreUrl,
+    "google-play-app": `app-id=${androidPackage}`,
+  },
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
-  const schema = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":`${siteUrl}/#organization`,name:"K53 Next",url:siteUrl,logo:`${siteUrl}/k53-next-logo.png`,brand:{"@type":"Brand",name:"K53 Next"}},{"@type":"WebSite","@id":`${siteUrl}/#website`,url:siteUrl,name:"K53 Next",description:"K53 learner's licence practice for South Africa.",inLanguage:"en-ZA",publisher:{"@id":`${siteUrl}/#organization`}},{"@type":"SoftwareApplication","@id":`${siteUrl}/#app`,name:"K53 Next",applicationCategory:"EducationalApplication",operatingSystem:"Android, Web",url:siteUrl,downloadUrl:playStoreUrl,installUrl:playStoreUrl,image:`${siteUrl}/k53-next-logo.png`,description:"Screen-based K53 learner's licence practice for South Africa's computerised test.",featureList:["1,574 K53 questions","Road rules, road signs and vehicle controls","Timed mock tests","Code A, Code B and Code C practice"],offers:{"@type":"Offer",price:"0",priceCurrency:"ZAR"}}]};
+  const schema = {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":`${siteUrl}/#organization`,name:"K53 Next",url:siteUrl,logo:`${siteUrl}/k53-next-logo.png`,brand:{"@type":"Brand",name:"K53 Next"}},{"@type":"WebSite","@id":`${siteUrl}/#website`,url:siteUrl,name:"K53 Next",description:"K53 learner's licence practice for South Africa.",inLanguage:"en-ZA",publisher:{"@id":`${siteUrl}/#organization`}},{"@type":"SoftwareApplication","@id":`${siteUrl}/#app`,name:"K53 Next",alternateName:["K53 Next Learner's Licence App","K53 Learner's Licence App"],applicationCategory:"EducationalApplication",operatingSystem:"Android",url:`${siteUrl}/learners-licence-app/`,downloadUrl:playStoreUrl,installUrl:playStoreUrl,sameAs:[playStoreUrl],image:`${siteUrl}/k53-next-logo.png`,description:"Screen-based K53 learner's licence practice for South Africa's computerised test.",featureList:["1,574 K53 questions","Road rules, road signs and vehicle controls","Timed mock tests","Code A, Code B and Code C practice"],potentialAction:{"@type":"DownloadAction",target:{"@type":"EntryPoint",urlTemplate:playStoreUrl,actionPlatform:["https://schema.org/AndroidPlatform"]}},offers:{"@type":"Offer",url:playStoreUrl,price:"0",priceCurrency:"ZAR",availability:"https://schema.org/InStock"}}]};
   return <html lang="en-ZA"><body><a className="skip" href="#main">Skip to content</a>{children}<Script id="site-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}} /></body></html>;
 }
