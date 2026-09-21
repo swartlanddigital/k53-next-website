@@ -200,6 +200,17 @@ export default function Page() {
               Links to Google Play, Google sign-in or other third-party services
               are governed by those services’ own privacy terms.
             </p>
+            <p>
+              The marketing website uses Google AdSense to display advertising.
+              Google and its advertising partners may use cookies or similar
+              technologies to show ads, measure their performance and prevent
+              fraud. Depending on your location and privacy choices, ads may be
+              personalised or non-personalised. You can manage available choices
+              through any consent notice shown on the website and through your
+              browser settings. See Google&apos;s{" "}
+              <a href="https://policies.google.com/technologies/ads">advertising information</a>{" "}
+              for more details.
+            </p>
 
             <h2>Contact us</h2>
             <p>
