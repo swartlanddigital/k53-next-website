@@ -6,16 +6,16 @@ K53 Next helps candidates practise road rules, road signs and vehicle controls w
 
 ## Canonical pages
 
-- [K53 Next home](https://k53next.co.za/): Overview of the app, study topics and download options.
-- [K53 learner's licence app](https://k53next.co.za/learners-licence-app/): What the Android app offers and where to download it.
-- [K53 test study hub](https://k53next.co.za/k53-test/): Answer-first guide to the K53 learner's licence test and how to prepare.
-- [New computerised learner's test](https://k53next.co.za/computerised-learners-test/): What changed in the screen-based test and how to study for it.
-- [Learner's licence appointment study plan](https://k53next.co.za/learner-licence-appointment/): A four-week plan from booking an appointment to test day.
-- [K53 learner's test guide](https://k53next.co.za/k53-learners-test/): Topics and practice for the learner's test.
-- [K53 road signs guide](https://k53next.co.za/k53-road-signs/): Road-sign study and visual recognition practice.
-- [K53 practice test](https://k53next.co.za/k53-practice-test/): Practice modes for rules, signs, controls and mixed tests.
-- [Download K53 Next](https://k53next.co.za/download/): Web practice, QR code and active Google Play download link.
-- [K53 learner's licence FAQ](https://k53next.co.za/faq/): Short answers about the test, practice and the app.
+- [K53 Next home](https://k53next.swartlanddigital.co.za/): Overview of the app, study topics and download options.
+- [K53 learner's licence app](https://k53next.swartlanddigital.co.za/learners-licence-app/): What the Android app offers and where to download it.
+- [K53 test study hub](https://k53next.swartlanddigital.co.za/k53-test/): Answer-first guide to the K53 learner's licence test and how to prepare.
+- [New computerised learner's test](https://k53next.swartlanddigital.co.za/computerised-learners-test/): What changed in the screen-based test and how to study for it.
+- [Learner's licence appointment study plan](https://k53next.swartlanddigital.co.za/learner-licence-appointment/): A four-week plan from booking an appointment to test day.
+- [K53 learner's test guide](https://k53next.swartlanddigital.co.za/k53-learners-test/): Topics and practice for the learner's test.
+- [K53 road signs guide](https://k53next.swartlanddigital.co.za/k53-road-signs/): Road-sign study and visual recognition practice.
+- [K53 practice test](https://k53next.swartlanddigital.co.za/k53-practice-test/): Practice modes for rules, signs, controls and mixed tests.
+- [Download K53 Next](https://k53next.swartlanddigital.co.za/download/): Web practice, QR code and active Google Play download link.
+- [K53 learner's licence FAQ](https://k53next.swartlanddigital.co.za/faq/): Short answers about the test, practice and the app.
 
 ## Key answers
 
@@ -28,7 +28,7 @@ K53 Next helps candidates practise road rules, road signs and vehicle controls w
 ## Download
 
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app): Official Android download for K53 Next.
-- [Open the web app](https://k53next.co.za/app/): Start browser-based practice.
+- [Open the web app](https://k53next.swartlanddigital.co.za/app/): Start browser-based practice.
 
 ## Source policy
 

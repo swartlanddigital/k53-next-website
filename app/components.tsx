@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export const APP_URL = "https://cunning-pass-k53-fast.base44.app";
 export const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://k53next.co.za";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://k53next.swartlanddigital.co.za";
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const asset = (path: string) => `${BASE_PATH}${path}`;
 export const GOOGLE_PLAY_ICON = "/play-store/google-play-icon.png";
