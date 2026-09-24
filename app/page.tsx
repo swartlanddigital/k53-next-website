@@ -10,6 +10,7 @@ import {
   OfficialManuals,
   Phone,
   PLAY_STORE_URL,
+  SITE_URL,
   StoreButtons,
   asset,
   faqItems,
@@ -19,16 +20,17 @@ const GOVERNMENT_SOURCE = "https://www.westerncape.gov.za/mobility/article/weste
 const IOL_SOURCE = "https://iol.co.za/news/2026-05-23-only-40-pass-south-africas-learners-licence-test-can-you/";
 
 export default function Home() {
+  const homeUrl = `${SITE_URL}/`;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": "#org", name: "K53 Next", url: "/" },
-      { "@type": "WebSite", "@id": "#website", name: "K53 Next", url: "/", publisher: { "@id": "#org" } },
+      { "@type": "Organization", "@id": `${homeUrl}#org`, name: "K53 Next", url: homeUrl },
+      { "@type": "WebSite", "@id": `${homeUrl}#website`, name: "K53 Next", url: homeUrl, publisher: { "@id": `${homeUrl}#org` } },
       {
         "@type": "SoftwareApplication",
         name: "K53 Next",
         applicationCategory: "EducationalApplication",
-        operatingSystem: "Web, iOS, Android",
+        operatingSystem: "Web, Android",
         url: APP_URL,
         description: "Screen-based K53 preparation for South Africa's computerised learner's licence test.",
         offers: { "@type": "Offer", price: "0", priceCurrency: "ZAR" },

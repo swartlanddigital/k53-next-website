@@ -23,6 +23,7 @@ test("server-renders the finished K53 Next homepage", async () => {
   assert.match(html, /<html lang="en-ZA">/i);
   assert.match(html, /<title>K53 Next \| K53 Learner&#x27;s Licence App South Africa/i);
   assert.match(html, /1,574 learner&#x27;s licence questions/);
+  assert.match(html, /k53-next-logo-256\.webp/);
   assert.match(html, /Write your learners/);
   assert.match(html, /Android is live on Google Play/);
   assert.match(html, /play\.google\.com\/store\/apps\/details\?id=/);
@@ -32,6 +33,9 @@ test("server-renders the finished K53 Next homepage", async () => {
   assert.match(html, /iol\.co\.za/);
   assert.match(html, /Independent study tool/);
   assert.match(html, /application\/ld\+json/);
+  assert.match(html, /Web, Android/);
+  assert.doesNotMatch(html, /Web, iOS, Android/);
+  assert.match(html, /https:\/\/k53next\.co\.za\/#org/);
   assert.match(html, /property="og:image" content="http:\/\/localhost:3000\/og\.png"/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });

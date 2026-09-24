@@ -2,7 +2,10 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-const LAST_MODIFIED = new Date("2026-09-11T00:00:00.000Z");
+// Keep this factual: the public site and its canonical domain were refreshed on
+// this date. Google uses lastmod as a recrawl hint, so stale or automatically
+// changing timestamps are both less useful than the real release date.
+const LAST_MODIFIED = new Date("2026-09-24T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
@@ -34,7 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   return paths.map((path, index) => ({
-    url: `${base}${path}`,
+    // The homepage canonical includes a trailing slash. Publishing the exact
+    // same URL in the sitemap avoids making crawlers normalise two variants.
+    url: path ? `${base}${path}` : `${base}/`,
     lastModified: LAST_MODIFIED,
     changeFrequency: index === 0 ? "weekly" : "monthly",
     priority: index === 0 ? 1 : (["/privacy/", "/terms/", "/delete-account/"].includes(path)) ? 0.3 : 0.8,

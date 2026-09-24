@@ -18,7 +18,7 @@ export const OFFICIAL_MANUALS = [
 ] as const;
 
 export function Logo() {
-  return <Link className="logo" href="/" aria-label="K53 Next home"><img className="logo-image" src={asset("/k53-next-logo.png")} alt="" width="1254" height="1254" /></Link>;
+  return <Link className="logo" href="/" aria-label="K53 Next home"><img className="logo-image" src={asset("/k53-next-logo-256.webp")} alt="" width="256" height="256" /></Link>;
 }
 
 export function GooglePlayMark() {
