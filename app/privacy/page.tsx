@@ -19,7 +19,7 @@ export default function Page() {
         />
         <article className="content-page">
           <div className="shell narrow prose">
-            <span className="legal-date">Effective 21 September 2026</span>
+            <span className="legal-date">Updated 27 October 2026</span>
 
             <h2>About this policy</h2>
             <p>
@@ -115,7 +115,7 @@ export default function Page() {
             <p>
               Consent and privacy choices are presented where applicable. You
               can review available advertising privacy choices in the app and
-              use Android&apos;s advertising-ID controls. Premium removes adverts
+              use Android&apos;s advertising-ID controls. Purchased Premium removes adverts
               from the app. Removing adverts does not delete information
               previously processed by Google.
             </p>
@@ -123,6 +123,39 @@ export default function Page() {
               For further information, see Google&apos;s{" "}
               <a href="https://policies.google.com/privacy">Privacy Policy</a>{" "}
               and <a href="https://policies.google.com/technologies/ads">advertising information</a>.
+            </p>
+
+            <h2>Optional study analytics and question reports</h2>
+            <p>
+              Optional usage analytics is off until you enable it. When enabled,
+              Firebase Analytics measures feature use and completed study sessions.
+              The app also sends question identifiers, selected answer positions,
+              the question-content release and a random session reference to our
+              Firebase backend. The backend checks these against the published
+              questions and immediately combines them into answer counts,
+              accuracy and skipped-question statistics. These records contain no
+              account ID, name or email, and are not individual learner histories.
+              Review-app tests are kept separate from production statistics.
+            </p>
+            <p>
+              Unsent question batches stay on your device for at most seven days,
+              with a maximum of five pending sessions. Disabling usage analytics
+              clears that queue. Aggregate question statistics expire after
+              twelve months. Random session hashes used to prevent duplicate
+              counting expire after fourteen days, and hashed rate-limit records
+              after two days. Scheduled daily cleanup removes expired records;
+              service logs and provider backup retention are separate.
+            </p>
+            <p>
+              Reporting a question is voluntary and works independently of usage
+              analytics. A report contains its question reference, report reason,
+              optional comment, question-content release and report dates/status.
+              It is visible only in the owner&apos;s private manager and expires
+              after ninety days, with daily cleanup. Please leave names, contact
+              details and other personal information out of report comments.
+              Privately marking a mock-test question for later does not send a
+              report. The free Premium preview retains adverts; purchased Premium
+              removes them.
             </p>
 
             <h2>Service providers and sharing</h2>
