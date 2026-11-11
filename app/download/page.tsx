@@ -59,7 +59,7 @@ export default function Page() {
             <h2>Everything you need before test day.</h2>
             <p>Practise 1,574 screen-based K53 questions across road rules, road signs and vehicle controls. Build confidence for Code A, Code B or Code C, then use timed mock tests before you write.</p>
             <StoreButtons />
-            <p className="download-support">Prefer to start without installing? <a className="text-link" href={APP_URL}>Open the K53 Next web app ↗</a></p>
+            <p className="download-support">Using an iPhone? <a className="text-link" href={APP_URL}>Open K53 Next in Safari ↗</a>, tap Share, choose Add to Home Screen, then tap Add. You can also use the web app without installing it.</p>
           </div>
           <div className="download-art"><a className="qr-link" href={PLAY_STORE_URL} target="_blank" rel="noreferrer" aria-label="Scan the QR code to download K53 Next from Google Play"><div className="qr-card"><img src={asset("/play-store-qr.png")} alt="QR code for downloading K53 Next on Google Play" width="640" height="640" /><span className="qr-card-label">SCAN TO DOWNLOAD</span><span className="qr-card-store">Google Play</span></div></a><span className="scribble">READY<br />TO WRITE ↙</span></div>
         </div>
