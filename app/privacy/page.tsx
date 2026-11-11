@@ -19,7 +19,7 @@ export default function Page() {
         />
         <article className="content-page">
           <div className="shell narrow prose">
-            <span className="legal-date">Updated 27 October 2026</span>
+            <span className="legal-date">Updated 11 November 2026</span>
 
             <h2>About this policy</h2>
             <p>
@@ -60,10 +60,11 @@ export default function Page() {
               <li>To create and secure your account and keep you signed in.</li>
               <li>
                 To provide quizzes, mock tests, bookmarks and progress tracking
-                in the version of K53 Next you use. The native Android app and
-                the Base44 web app use separate account and payment systems.
-                Your account, study progress and Premium access are not
-                automatically shared between them.
+                in the version of K53 Next you use. The Android app and the
+                current installable web app share Firebase accounts, cloud study
+                progress and verified Premium access when you use the same
+                sign-in method. The previous Base44 web app keeps its separate
+                account and payment system.
               </li>
               <li>To operate, maintain, troubleshoot and improve K53 Next.</li>
               <li>To detect misuse, fraud and security threats.</li>
@@ -95,10 +96,10 @@ export default function Page() {
               number or card security code.
             </p>
             <p>
-              The web app continues to use its existing Base44 and Yoco payment
-              system. A web purchase does not automatically unlock native
-              Android Premium, and an Android purchase does not automatically
-              unlock web Premium.
+              New purchases in the current installable web app are not yet
+              enabled. Previous Base44 web purchases remain in the separate
+              Base44 and Yoco system and do not automatically transfer to the
+              current Android or installable web app.
             </p>
 
             <h2>Advertising in the native Android app</h2>
@@ -158,13 +159,44 @@ export default function Page() {
               removes them.
             </p>
 
+            <h2>Optional web notifications</h2>
+            <p>
+              The installable web app only registers notifications after you
+              choose Enable notifications and allow your device&apos;s permission
+              request. You can choose daily study reminders, their South African
+              delivery time, and app-update alerts separately. Each device has
+              its own choices; enabling notifications on one device does not
+              enable them on another.
+            </p>
+            <p>
+              To deliver these alerts, we store that device&apos;s push-service
+              endpoint, encryption keys, notification preferences, and limited
+              delivery records. A random device credential protects changes to
+              the subscription. The push subscription is not linked to your name,
+              email address or Firebase account. Cloudflare operates our web
+              notification service; your browser or device provider delivers the
+              encrypted notification. We do not need your phone number or precise
+              location. Delivery can be affected by device settings, Focus modes
+              and network availability.
+            </p>
+            <p>
+              Use the bell&apos;s Turn off notifications control to remove the
+              subscription from our service and unsubscribe this browser.
+              Revoked or expired endpoints are removed when the push provider
+              reports them. Reminder delivery records expire after thirty days.
+              You can also block notifications in your device settings.
+            </p>
+
             <h2>Service providers and sharing</h2>
             <p>
               We do not sell your personal information. The native Android app
               uses Google Firebase for authentication, cloud storage, security
               and purchase verification, Google Play for payments, and Google
-              AdMob for advertising as described above. The web app uses its
-              existing Base44/Wix and Yoco services. Providers process
+              AdMob for advertising as described above. The current installable
+              web app uses Firebase for accounts and study sync, Cloudflare for
+              web delivery and optional notifications, and Google web advertising
+              technology, currently with test inventory. The previous web app
+              retains its Base44/Wix and Yoco services. Providers process
               information according to their roles and applicable terms and
               privacy policies. Advertising data may be shared with Google and
               its advertising partners. We may also disclose information where
