@@ -1,9 +1,10 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
+
 import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, SITE_URL } from "../components";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "K53 Test | Learner's Licence Practice South Africa",
   description: "Prepare for your South African K53 learner's licence test with free practice questions, road signs, rules of the road, vehicle controls and timed mock tests.",
   alternates: { canonical: "/k53-test/" },
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     title: "K53 Test | Prepare to write your learner's licence",
     description: "A practical K53 test study hub for South African learner's licence candidates writing Code A, Code B or Code C.",
   },
-};
+});
 
 export default function Page() {
   const schema = {
@@ -63,6 +64,6 @@ export default function Page() {
       <CTA />
     </main>
     <Footer />
-    <Script id="k53-test-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script id="k53-test-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
   </>;
 }

@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["Are the manuals current?", "The linked manuals are version 1.00 dated June 2012. Check current official sources because procedures, fees and requirements can change."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Official Learner Driver Manuals South Africa | Download PDFs",
   description: "Download the official South African learner-driver manuals for Rules of the Road, Road Traffic Signs and Vehicle Controls from the NaTIS source links.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Official South African learner-driver manuals",
     description: "Find the official Rules of the Road, Road Traffic Signs and Vehicle Controls PDF manuals before you write your learner's licence test.",
   },
-};
+});
 
 export default function Page() {
   return <>

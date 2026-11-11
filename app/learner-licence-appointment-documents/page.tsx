@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -20,7 +21,7 @@ const faqs = [
   ["What must I take on learner's licence test day?", "The official government service says to take your booking receipt and identity document on the day of the test. Confirm any local instructions with your testing centre."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Learner's Licence Appointment Documents South Africa | What to Bring",
   description: "A practical South African learner's licence appointment document checklist: ID, photographs, address proof, LL1, fees, eye test and test-day documents.",
   alternates: { canonical: path },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     title: "What to take to your learner's licence appointment",
     description: "Check the documents and preparation steps before visiting your Driving Licence Testing Centre.",
   },
-};
+});
 
 export default function Page() {
   return <>

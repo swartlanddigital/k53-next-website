@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["How long should each study session be?", "A focused 30 to 45 minute session is easier to repeat than an occasional long cram session. Adjust the length around your school, work and appointment schedule."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Four-Week Learner's Licence Study Plan South Africa | K53",
   description: "A practical four-week South African learner's licence study plan from appointment date to test day: road rules, road signs, vehicle controls and timed practice.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Your four-week learner's licence study plan",
     description: "Use the month between booking and test day to study deliberately instead of cramming.",
   },
-};
+});
 
 export default function Page() {
   return <>

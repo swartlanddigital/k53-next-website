@@ -1,16 +1,17 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
-import Script from "next/script";
+
 import Link from "next/link";
 import { APP_URL, CTA, Footer, Header, PageHero } from "../components";
 
 const GOVERNMENT_SOURCE = "https://www.westerncape.gov.za/mobility/article/western-cape-launches-innovative-computerised-learners-licence-testing-system";
 const IOL_SOURCE = "https://iol.co.za/news/2026-05-23-only-40-pass-south-africas-learners-licence-test-can-you/";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "New Computerised Learner's Licence Test South Africa",
   description: "Learn what changed in South Africa's new computerised learner's licence test and how to prepare before you write with K53 Next screen-based practice.",
   alternates: { canonical: "/computerised-learners-test/" },
-};
+});
 
 export default function ComputerisedTestPage() {
   const articleSchema = {
@@ -88,7 +89,7 @@ export default function ComputerisedTestPage() {
         <CTA />
       </main>
       <Footer />
-      <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
     </>
   );
 }

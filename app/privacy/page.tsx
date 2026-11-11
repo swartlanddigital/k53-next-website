@@ -1,11 +1,12 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import { Footer, Header, PageHero } from "../components";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Privacy Policy",
   description: "Read the privacy policy for the K53 Next app and website.",
   alternates: { canonical: "/privacy/" },
-};
+});
 
 export default function Page() {
   return (

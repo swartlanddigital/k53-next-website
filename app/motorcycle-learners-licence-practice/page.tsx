@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["Does K53 Next support motorcycle learner's licence practice?", "Yes. K53 Next includes a motorcycle study path alongside road rules, road signs, mistake review and timed mock tests."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Motorcycle Learner's Licence Practice South Africa | Code A",
   description: "Practise for a South African motorcycle learner's licence with Code A and A1 study, road signs, road rules, vehicle controls and timed mock tests.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Motorcycle learner's licence practice",
     description: "Prepare for the motorcycle learner's licence theory test with a focused K53 study path.",
   },
-};
+});
 
 export default function Page() {
   return <>

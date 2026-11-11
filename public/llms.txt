@@ -7,15 +7,17 @@ K53 Next helps candidates practise road rules, road signs and vehicle controls w
 ## Canonical pages
 
 - [K53 Next home](https://k53next.co.za/): Overview of the app, study topics and download options.
-- [K53 learner's licence app](https://k53next.co.za/learners-licence-app/): What the Android app offers and where to download it.
+- [K53 learner's licence app](https://k53next.co.za/learners-licence-app/): Features and installation options for Android and the iPhone web app.
 - [K53 test study hub](https://k53next.co.za/k53-test/): Answer-first guide to the K53 learner's licence test and how to prepare.
 - [New computerised learner's test](https://k53next.co.za/computerised-learners-test/): What changed in the screen-based test and how to study for it.
 - [Learner's licence appointment study plan](https://k53next.co.za/learner-licence-appointment/): A four-week plan from booking an appointment to test day.
 - [K53 learner's test guide](https://k53next.co.za/k53-learners-test/): Topics and practice for the learner's test.
 - [K53 road signs guide](https://k53next.co.za/k53-road-signs/): Road-sign study and visual recognition practice.
 - [K53 practice test](https://k53next.co.za/k53-practice-test/): Practice modes for rules, signs, controls and mixed tests.
-- [Download K53 Next](https://k53next.co.za/download/): Web practice, QR code and active Google Play download link.
+- [Download K53 Next](https://k53next.co.za/download/): Android download and iPhone Home Screen installation options.
 - [K53 learner's licence FAQ](https://k53next.co.za/faq/): Short answers about the test, practice and the app.
+
+- [K53 Next for iPhone](https://k53next.co.za/iphone/): Safari installation, offline setup and optional notification instructions.
 
 ## Key answers
 
@@ -25,10 +27,14 @@ K53 Next helps candidates practise road rules, road signs and vehicle controls w
 - K53 Next is an independent educational study tool. It is not the official test, does not issue licences and is not affiliated with the South African government, NaTIS or a licensing authority.
 - Confirm current booking documents, fees, dates and test-day requirements with the relevant Driving Licence Testing Centre or official government service.
 
+- K53 Next is available as a native Android app on Google Play and an installable iPhone web app. The iPhone version is installed from Safari, not an App Store listing.
+- The current approved question bank has more than 1,600 enabled practice questions across its vehicle paths as verified on 11 November 2026.
+- The current Android and web apps share Firebase account progress and verified Android Premium when the same sign-in method is used. Older Base44 web accounts remain separate.
+
 ## Download
 
 - [Google Play listing](https://play.google.com/store/apps/details?id=com.base69e9f3638e3e914a5f9614b0.app): Official Android download for K53 Next.
-- [Open the web app](https://k53next.co.za/app/): Start browser-based practice.
+- [Open the web app](https://app.k53next.co.za/): Start browser-based practice.
 
 ## Source policy
 

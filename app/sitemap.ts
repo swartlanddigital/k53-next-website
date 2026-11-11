@@ -8,7 +8,7 @@ export const dynamic = "force-static";
 const LAST_MODIFIED = new Date("2026-09-24T00:00:00.000Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+  const base = process.env.NEXT_PUBLIC_SITE_URL || "https://k53next.co.za";
   const paths = [
     "",
     "/computerised-learners-test/",
@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/k53-practice-test/",
     "/learner-licence-test-questions/",
     "/download/",
+    "/iphone/",
     "/learner-licence-appointment/",
     "/learner-licence-appointment-documents/",
     "/after-booking-learner-licence-test/",
@@ -40,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // The homepage canonical includes a trailing slash. Publishing the exact
     // same URL in the sitemap avoids making crawlers normalise two variants.
     url: path ? `${base}${path}` : `${base}/`,
-    lastModified: LAST_MODIFIED,
+    lastModified: ["", "/iphone/", "/download/", "/learners-licence-app/", "/faq/", "/support/", "/terms/", "/delete-account/", "/privacy/"].includes(path) ? new Date("2026-11-11T00:00:00.000Z") : LAST_MODIFIED,
     changeFrequency: index === 0 ? "weekly" : "monthly",
     priority: index === 0 ? 1 : (["/privacy/", "/terms/", "/delete-account/"].includes(path)) ? 0.3 : 0.8,
   }));

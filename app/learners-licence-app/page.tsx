@@ -1,59 +1,8 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, Phone, PLAY_STORE_URL, SITE_URL, StoreButtons } from "../components";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "K53 Learner's Licence App | Download South Africa",
-  description: "Download K53 Next, a South African learner's licence app with 1,574 K53 questions, road-sign images, road rules, vehicle controls and timed mock tests.",
-  alternates: { canonical: "/learners-licence-app/" },
-  openGraph: {
-    title: "K53 Learner's Licence App | Download K53 Next",
-    description: "Practise for your South African learner's licence test on the web or get K53 Next on Google Play.",
-    images: [{ url: "/og.png", width: 1732, height: 909, alt: "K53 Next learner's licence app for South Africa" }],
-  },
-};
-
-export default function Page() {
-  const schema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-          { "@type": "ListItem", position: 2, name: "K53 Learner's Licence App", item: `${SITE_URL}/learners-licence-app/` },
-        ],
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": `${SITE_URL}/learners-licence-app/#app`,
-        name: "K53 Next",
-        alternateName: "K53 Learner's Licence App",
-        applicationCategory: "EducationalApplication",
-        operatingSystem: "Android",
-        url: `${SITE_URL}/learners-licence-app/`,
-        downloadUrl: PLAY_STORE_URL,
-        installUrl: PLAY_STORE_URL,
-        sameAs: [PLAY_STORE_URL],
-        image: `${SITE_URL}/k53-next-logo.png`,
-        description: "South African K53 learner's licence practice with road rules, road signs, vehicle controls and timed mock tests.",
-        featureList: ["1,574 K53 questions", "Road rules, road signs and vehicle controls", "Timed mock tests", "Code A, Code B and Code C practice"],
-        potentialAction: { "@type": "DownloadAction", target: { "@type": "EntryPoint", urlTemplate: PLAY_STORE_URL, actionPlatform: ["https://schema.org/AndroidPlatform"] } },
-        offers: { "@type": "Offer", url: PLAY_STORE_URL, price: "0", priceCurrency: "ZAR", availability: "https://schema.org/InStock" },
-      },
-    ],
-  };
-
-  return <>
-    <Header />
-    <main id="main">
-      <PageHero eyebrow="THE K53 LEARNER APP" title="Your K53 study plan, in your pocket." lede="Practise on the web now, or download the Android app from Google Play.">
-        <div className="hero-actions page-hero-actions"><a className="button" href={APP_URL}>Practice on the web app ↗</a><a className="button button-secondary" href={PLAY_STORE_URL} target="_blank" rel="noreferrer"><GooglePlayMark /> Get it on Google Play ↗</a></div>
-      </PageHero>
-      <article className="content-page"><div className="shell tour-grid"><div className="tour-phone"><Phone screen="/app-screens/practice.png" alt="K53 Next learner app practice screen" /><span className="bubble bubble-one"><b>1,574 questions</b></span><span className="bubble bubble-two"><b>Code A · B · C</b></span></div><div className="prose"><h2>Built for real study days</h2><p>K53 Next turns the question bank into short, useful practice sessions. Choose a topic when you have five minutes, return to your mistakes later, or run a timed mock test when you are ready for exam pressure.</p><ul><li>Road rules, road signs and vehicle controls</li><li>Image-based questions with clear, square visuals</li><li>Mixed practice and category drills</li><li>Weak-area and mistake review modes</li><li>Bookmarks, accuracy and readiness tracking</li></ul><StoreButtons /><div className="callout"><b>Store status:</b> The Android app is live on Google Play. On iPhone, open the web app in Safari, tap Share, choose Add to Home Screen and tap Add. You can then launch K53 Next from your Home Screen.</div><p><a className="button" href={APP_URL}>Practice on the web app ↗</a></p></div></div></article>
-      <CTA />
-    </main>
-    <Footer />
-    <Script id="app-page-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-  </>;
-}
+import { CTA, Footer, Header, PageHero, Phone, StoreButtons, Icon } from "../components";
+import { SITE_URL, appSchemas } from "../site-config";
+import { siteMetadata } from "../seo";
+export const metadata:Metadata=siteMetadata({title:"K53 Learner’s Licence App for Android and iPhone",description:"Study road rules, signs and vehicle controls with K53 Next. Topic practice, mock tests and progress review on Android and the installable iPhone web app.",alternates:{canonical:"/learners-licence-app/"}});
+export default function AppPage(){return <><Header/><main id="main"><PageHero eyebrow="YOUR LEARNER’S LICENCE STUDY APP" title="Prepare with confidence. Keep moving forward." lede="Choose a topic, practise a little and come back to the questions that need another look. K53 Next is available on Android and as an installable iPhone web app."><div className="page-hero-actions"><StoreButtons/></div></PageHero><section className="section"><div className="shell learning-grid"><figure className="app-figure"><Phone screen="/app-screens/current-home.webp" alt="The current K53 Next web app home screen"/><figcaption>The iPhone web app follows the Android app’s visual style.</figcaption></figure><div className="prose"><span className="eyebrow">BUILT FOR REAL STUDY DAYS</span><h2>Find your next useful question.</h2><p>Use more than 1,600 enabled practice questions across the question bank’s vehicle paths. Study road rules, road signs and the controls for your selected motorcycle, light motor vehicle or heavy motor vehicle.</p><ul className="feature-list"><li><Icon name="book"/><div><b>Learn by topic</b><span>Choose focused practice, mixed questions, bookmarks or mistake review.</span></div></li><li><Icon name="clock"/><div><b>Build test confidence</b><span>Use timed or untimed practice tests, including a 64-question full mock.</span></div></li><li><Icon name="progress"/><div><b>Review your progress</b><span>See your accuracy, completed practice and questions to revisit.</span></div></li></ul><Link className="text-link" href="/k53-practice-test/">Explore practice options <Icon/></Link></div></div></section><section className="section section-tint"><div className="shell resource-cards"><article className="resource-card"><span className="feature-icon mint"><Icon name="phone"/></span><h2>Now on iPhone.</h2><p>Open the web app in Safari and add it to your Home Screen. Tap the bell in the installed app for optional study reminders and app updates.</p><Link className="text-link" href="/iphone/">iPhone installation guide <Icon/></Link></article><article className="resource-card"><span className="feature-icon blue"><Icon name="check"/></span><h2>Your account travels with you.</h2><p>Use the same account and sign-in method to sync the current Android and web apps. Verified Android Premium is recognised on the web. Guest activity and previous Base44 accounts remain separate.</p><Link className="text-link" href="/download/">Choose your device <Icon/></Link></article></div></section><section className="section"><div className="shell narrow prose"><h2>A study tool to use alongside official sources.</h2><p>K53 Next provides independent practice. It is not a government service, and its questions are not live official exam questions. Use the original <Link href="/official-learner-driver-manuals/">learner-driver manuals</Link> and check current booking requirements with your Driving Licence Testing Centre.</p><p>Free practice has daily limits. Purchased Premium provides unlimited practice and removes adverts; Google Play shows the current Android price and purchase terms. New web purchases are not yet enabled.</p></div></section><CTA/></main><Footer/><script id="app-page-schema" type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({"@context":"https://schema.org","@graph":[...appSchemas,{"@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Home",item:`${SITE_URL}/`},{"@type":"ListItem",position:2,name:"K53 learner’s licence app",item:`${SITE_URL}/learners-licence-app/`}]}]})}}/></>}

@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["Can I use the same road-sign practice for Code 10?", "Road-sign and road-rule foundations are shared areas of learner's licence preparation. Combine them with the vehicle-control path relevant to your application."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Code 10 Learner's Licence Test Preparation | Code C South Africa",
   description: "Prepare for the South African Code 10 learner's licence test with Code C heavy motor vehicle practice, road rules, road signs, vehicle controls and mock tests.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Code 10 learner's licence test preparation",
     description: "A focused Code C study path for heavy motor vehicle learner's licence preparation.",
   },
-};
+});
 
 export default function Page() {
   return <>

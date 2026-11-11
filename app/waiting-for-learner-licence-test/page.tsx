@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -16,7 +17,7 @@ const faqs = [
   ["What if my appointment or test date changes?", "Keep the same study sequence and adjust the pace. Confirm any new booking details, documents and fees with the relevant official service or your local DLTC."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Waiting for Your Learner's Licence Test? What to Study",
   description: "Waiting for a South African learner's licence test date? Use a practical routine for road rules, road signs, vehicle controls and screen-based practice.",
   alternates: { canonical: path },
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     title: "Waiting for your learner's licence test date? Keep studying",
     description: "A flexible routine for staying ready while you wait for test day.",
   },
-};
+});
 
 export default function Page() {
   return <>

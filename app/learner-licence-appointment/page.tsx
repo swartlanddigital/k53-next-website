@@ -1,13 +1,14 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
+
 import { APP_URL, CTA, Footer, GooglePlayMark, Header, PageHero, PLAY_STORE_URL, SITE_URL } from "../components";
 
 const GOVERNMENT_BOOKING_URL = "https://www.gov.za/services/driving-licence/apply-learners-licence";
 const WESTERN_CAPE_BOOKING_URL = "https://www.westerncape.gov.za/service/learners-licence";
 const NATIS_URL = "https://online.natis.gov.za/#/";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Learner's Licence Appointment South Africa | 4-Week Study Plan",
   description: "Booked your South African learner's licence appointment? Use the weeks before your test date to study road rules, road signs and vehicle controls with K53 Next.",
   alternates: { canonical: "/learner-licence-appointment/" },
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     title: "Booked your learner's licence appointment? Start your study plan",
     description: "A practical four-week K53 study plan for the time between booking your learner's licence test and test day.",
   },
-};
+});
 
 export default function Page() {
   const schema = {
@@ -70,6 +71,6 @@ export default function Page() {
       <CTA />
     </main>
     <Footer />
-    <Script id="appointment-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <script id="appointment-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
   </>;
 }

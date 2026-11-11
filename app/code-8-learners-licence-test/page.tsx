@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["Can I practise Code 8 questions on my phone?", "Yes. K53 Next provides screen-based practice on the web app and an Android app on Google Play."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Code 8 Learner's Licence Test Practice | Code B South Africa",
   description: "Prepare for the South African Code 8 learner's licence test with Code B light motor vehicle practice, road rules, road signs, vehicle controls and mock tests.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Code 8 learner's licence test practice",
     description: "A clear Code B study path for light motor vehicle learner's licence preparation.",
   },
-};
+});
 
 export default function Page() {
   return <>

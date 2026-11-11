@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["What if my test date is still far away?", "Use the extra time to build understanding and review mistakes. Keep timed mock tests for later, when you have covered the main topics."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "What to Study After Booking Your Learner's Licence Test",
   description: "Booked your South African learner's licence test? Learn what to study first, how to use practice questions and how to build towards timed mock tests.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "What to study after booking your learner's test",
     description: "A practical next-step guide for the weeks between booking and test day.",
   },
-};
+});
 
 export default function Page() {
   return <>

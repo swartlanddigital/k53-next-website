@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["Should I study controls for my own vehicle only?", "Choose the path that matches the vehicle category on your application, then keep the shared road-rule and road-sign foundations strong."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "K53 Vehicle Controls Practice | Learner's Licence Test South Africa",
   description: "Practise K53 vehicle controls for your South African learner's licence test. Learn control purposes, safety checks and screen-based questions for your vehicle path.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "K53 vehicle controls practice before your learner's test",
     description: "Build confidence with vehicle-control study alongside road rules and road signs.",
   },
-};
+});
 
 export default function Page() {
   return <>

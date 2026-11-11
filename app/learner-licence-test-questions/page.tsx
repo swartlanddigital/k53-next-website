@@ -1,3 +1,4 @@
+import { siteMetadata } from "../seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
@@ -17,7 +18,7 @@ const faqs = [
   ["How should I use learner's licence practice questions?", "Answer without guessing, read the explanation, record the topic behind each mistake and return to it later in a mixed set. Understanding beats memorising a fixed answer order."],
 ] as [string, string][];
 
-export const metadata: Metadata = {
+export const metadata: Metadata = siteMetadata({
   title: "Learner's Licence Test Questions South Africa | K53 Practice",
   description: "Practise South African learner's licence test questions for road rules, road signs and vehicle controls with K53 Next, mistake review and timed mock tests.",
   alternates: { canonical: path },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title: "Learner's licence test questions for South Africa",
     description: "Use K53 practice questions to learn the idea, review mistakes and prepare for the computerised test.",
   },
-};
+});
 
 export default function Page() {
   return <>
