@@ -47,3 +47,28 @@ test('search discovery, compatibility links and original official manuals are pr
  for(const name of ['rules-of-the-road','road-traffic-signs','vehicle-controls'])assert.equal((await readFile(new URL(`manuals/${name}-v100-jun-2012.pdf`,output))).subarray(0,5).toString(),'%PDF-');
  assert.doesNotMatch(pages.find(x=>x.url===`${origin}/`).html,/rel="manifest"/);
 });
+
+test('Android App Links publish the signing association and usable web fallbacks', async () => {
+  const [association] = JSON.parse(await readFile(new URL('.well-known/assetlinks.json', output), 'utf8'));
+  assert.deepEqual(association.relation, ['delegate_permission/common.handle_all_urls']);
+  assert.equal(association.target.namespace, 'android_app');
+  assert.equal(association.target.package_name, 'com.base69e9f3638e3e914a5f9614b0.app');
+  assert.match(association.target.sha256_cert_fingerprints[0], /^(?:[0-9A-F]{2}:){31}[0-9A-F]{2}$/);
+
+  const fallbackLinks = {
+    android: 'https://app.k53next.co.za',
+    practice: '/k53-practice-test/',
+    'road-signs': '/k53-road-signs/',
+    'mock-test': '/k53-practice-test/',
+  };
+  for (const [destination, webUrl] of Object.entries(fallbackLinks)) {
+    const path = `open/${destination}/`;
+    const html = await readFile(new URL(`${path}index.html`, output), 'utf8');
+    assert.equal(canonical(html), `${origin}/${path}`);
+    assert.match(meta(html, 'robots'), /noindex/);
+    assert(!urls.includes(`${origin}/${path}`));
+    const links = tags(html, 'a').map(tag => attr(tag, 'href'));
+    assert(links.includes(webUrl));
+    assert(links.includes(`https://play.google.com/store/apps/details?id=${association.target.package_name}`));
+  }
+});
